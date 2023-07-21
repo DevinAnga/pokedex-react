@@ -1,4 +1,4 @@
-# bulbasaur
+# Bulbasaur
 
 ## Description
-This page is a recreation of bulbasaurs page from the pokedex
+This page is a recreation of Bulbasaurs page from the pokedex
