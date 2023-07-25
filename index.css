@@ -8,6 +8,9 @@
     url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.svg#Flexo-Medium")format("svg");
 }
 
+* {
+    box-sizing: border-box;
+}
 html {
     font-family: "Flexo-Medium"; 
 }
@@ -23,10 +26,12 @@ ul {
 
 .poke-picture {
     background-color: #f2f2f2;
+    border-radius: 10px;
 }
 
 .blurb {
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: 100;
 }
 
 .wrapper {
@@ -49,33 +54,40 @@ ul {
 .stats-box {
     background-color: #30a7d7;
     border-radius: 10px;
-    padding: 20px;
+    padding: 0 20px;
     display: inline-grid;
     grid-template-columns: auto auto;
+    width: 100%;
 }
 
 .stats-grid {
-    margin: 0 185px 0 0;
     padding: 0;
 }
 
 .stats-title {
     color: white;
     font-size: 15px;
+    font-weight: 400;
+}
+
+.section-header {
+    font-weight: 400;
 }
 
 .type-label {
     width: 150px;
-    height: 10px;
-    padding: 15px;
+    padding: 7px 0;
     border-radius: 10px;
     text-align: center;
-    line-height: 10px;
     font-size: 17px;
 }
 
 .stats {
     font-size: 19px;
+}
+
+.stats-gender {
+    font-size: 25px;
 }
 
 .type-grid ul {
@@ -84,7 +96,7 @@ ul {
 }
 
 .type-grid li {
-    margin: 0 10px;    
+    margin: 0 5px;    
 }
 
 .ability:after {
