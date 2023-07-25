@@ -21,4 +21,4 @@ const pokemonData = {
         "Overgrow"
       ]
     }
-  }
+}   

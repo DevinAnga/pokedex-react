@@ -12,7 +12,115 @@ html {
     font-family: "Flexo-Medium"; 
 }
 
-.title {
-    color: green;
+ul {
+    padding-inline-start: 0;
+    list-style: none;
 }
 
+.poke-picture {
+    background-color: #f2f2f2;
+}
+
+.blurb {
+    font-size: 24px;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.title {        
+    text-align: center;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    padding: 10px;
+}
+
+.stats-box {
+    background-color: #30a7d7;
+    border-radius: 10px;
+    padding: 20px;
+    display: inline-grid;
+    grid-template-columns: auto auto;
+}
+
+.stats-grid {
+    margin: 0 185px 0 0;
+    padding: 0;
+}
+
+.stats-title {
+    color: white;
+    font-size: 15px;
+}
+
+.type-label {
+    width: 150px;
+    height: 20px;
+    text-align: right;
+    font-size: 17px;
+}
+
+.stats {
+    font-size: 19px;
+}
+
+.type-grid ul {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+}
+
+.type-grid li {
+    margin: 0 5px;    
+}
+
+.ability:after {
+    content: '?';
+    vertical-align: middle;
+    text-align: center;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    color: #30a7d7;
+    background: white;
+}
+
+.grass {
+    background-color: #9bcc50;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.poison {
+    background-color: #b97fc9;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.fire {
+    background-color: #fd7d24;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.psychic {
+    background-color: #f366b9;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.ice {
+    background-color: #51c4e7;
+    padding: 20px;
+    border-radius: 10px;
+}
