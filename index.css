@@ -1,178 +1,183 @@
 @font-face {
-    font-family: "Flexo-Medium";
-    src: url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.eot");
-    src: url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.svg#Flexo-Medium")format("svg");
+  font-family: "Flexo-Medium";
+  src: url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.eot");
+  src: url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.svg#Flexo-Medium")
+      format("svg");
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 html {
-    font-family: "Flexo-Medium"; 
+  font-family: "Flexo-Medium";
 }
 
 ul {
-    padding-inline-start: 0;
-    list-style: none;
+  padding-inline-start: 0;
+  list-style: none;
 }
 
 .poke-num {
-    color: #616161;
+  color: #616161;
 }
 
 .poke-picture {
-    background-color: #f2f2f2;
-    border-radius: 10px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  max-width: 100%;
 }
 
 .blurb {
-    font-size: 20px;
-    font-weight: 100;
+  font-size: 1.25rem;
+  font-weight: 100;
 }
 
 .wrapper {
-    max-width: 1000px;
-    margin: 0 auto;
+  max-width: 1000px;
+  margin: 0 auto;
 }
-.title {        
-    text-align: center;
+
+.title {
+  text-align: center;
 }
 
 .row {
-    display: flex;
+  display: flex;
 }
 
 .column {
-    flex: 50%;
-    padding: 10px;
+  flex: 50%;
+  padding: 10px;
 }
 
 .stats-box {
-    background-color: #30a7d7;
-    border-radius: 10px;
-    padding: 0 20px;
-    display: inline-grid;
-    grid-template-columns: auto auto;
-    width: 100%;
+  background-color: #30a7d7;
+  border-radius: 10px;
+  padding: 0 20px;
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  width: 100%;
 }
 
 .stats-grid {
-    padding: 0;
+  padding: 0;
 }
 
 .stats-title {
-    color: white;
-    font-size: 15px;
-    font-weight: 400;
+  color: white;
+  font-size: 0.938rem;
+  font-weight: 400;
 }
 
 .section-header {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .type-label {
-    width: 150px;
-    padding: 7px 0;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 17px;
+  width: 150px;
+  padding: 7px 0;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.063rem;
+  margin: 0 5px;
 }
 
 .stats {
-    font-size: 19px;
+  font-size: 1.188rem;
 }
 
 .stats-gender {
-    font-size: 25px;
+  font-size: 1.563;
 }
 
-.type-grid ul {
-    display: inline-grid;
-    grid-template-columns: auto auto auto;
-}
-
-.type-grid li {
-    margin: 0 5px;    
+.type-grid-box {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
 }
 
 .ability:after {
-    content: '?';
-    vertical-align: middle;
-    text-align: center;
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    border-radius: 15px;
-    color: #30a7d7;
-    background: white;
+  content: "?";
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  color: #30a7d7;
+  background: white;
+}
+
+.poison,
+.fire,
+.psychic {
+  color: white;
 }
 
 .grass {
-    background-color: #9bcc50;
+  background-color: #9bcc50;
 }
 
 .poison {
-    background-color: #b97fc9;
-    color: white;
+  background-color: #b97fc9;
 }
 
 .fire {
-    background-color: #fd7d24;
-    color: white;
+  background-color: #fd7d24;
 }
 
 .psychic {
-    background-color: #f366b9;
-    color: white;
+  background-color: #f366b9;
 }
 
 .ice {
-    background-color: #51c4e7;
+  background-color: #51c4e7;
 }
 
 @media only screen and (max-width: 1024px) {
-    .type-grid ul {
-        display: inline-grid;
-        
-        grid-template-columns: auto auto;
-    }
+  .type-grid-box {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+  }
 
-    .type-grid li {
-        margin: 0 5px 5px 0;    
-    }
+  .type-label {
+    margin: 0 5px 5px 0;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-    .row {
-        display: inline;
-    }
+  .row {
+    display: inline;
+  }
 
-    .wrapper {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 480px;
+  .wrapper {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 480px;
+  }
+  .blurb-box {
+    text-align: center;
+  }
 
-    }
-    .blurb-box {
-        text-align: center;
-    }
+  .blurb {
+    text-align: center;
+  }
 
-    .blurb {
-        text-align: center;
-    }
-    
-    .type-grid ul {
-        display: inline-grid;
-        
-        grid-template-columns: auto auto;
-    }
+  .type-grid-box {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+  }
 
-    .type-grid li {
-        margin: 0 5px 5px 0;    
-    }
+  .type-label {
+    margin: 0 5px 5px 0;
+  }
 }
