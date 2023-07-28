@@ -59,17 +59,13 @@ ul {
   padding: 10px;
 }
 
-.stats-box {
+.stats {
   background-color: #30a7d7;
   border-radius: 10px;
   padding: 0 20px;
   display: inline-grid;
   grid-template-columns: auto auto;
   width: 100%;
-}
-
-.stats-grid {
-  padding: 0;
 }
 
 .stats-title {
@@ -91,7 +87,7 @@ ul {
   margin: 0 5px;
 }
 
-.stats {
+.stats-data {
   font-size: 1.188rem;
 }
 
@@ -99,7 +95,7 @@ ul {
   font-size: 1.563;
 }
 
-.type-grid-box {
+.type-list {
   display: inline-grid;
   grid-template-columns: auto auto auto;
 }
@@ -143,7 +139,7 @@ ul {
 }
 
 @media only screen and (max-width: 1024px) {
-  .type-grid-box {
+  .type-list {
     display: inline-grid;
     grid-template-columns: auto auto;
   }
@@ -164,7 +160,7 @@ ul {
     margin-right: auto;
     max-width: 480px;
   }
-  .blurb-box {
+  .blurb-container {
     text-align: center;
   }
 
@@ -172,7 +168,7 @@ ul {
     text-align: center;
   }
 
-  .type-grid-box {
+  .type-list {
     display: inline-grid;
     grid-template-columns: auto auto;
   }
