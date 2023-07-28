@@ -1,0 +1,179 @@
+@font-face {
+  font-family: "Flexo-Medium";
+  src: url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.eot");
+  src: url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.svg#Flexo-Medium")
+      format("svg");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Flexo-Medium";
+}
+
+ul {
+  padding-inline-start: 0;
+  list-style: none;
+}
+
+.poke-num {
+  color: #616161;
+}
+
+.poke-picture {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.blurb {
+  font-size: 1.25rem;
+  font-weight: 100;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 10px;
+}
+
+.stats {
+  background-color: #30a7d7;
+  border-radius: 10px;
+  padding: 0 20px;
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+}
+
+.stats-title {
+  color: white;
+  font-size: 0.938rem;
+  font-weight: 400;
+}
+
+.section-header {
+  font-weight: 400;
+}
+
+.type-label {
+  width: 150px;
+  padding: 7px 0;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.063rem;
+  margin: 0 5px;
+}
+
+.stats-data {
+  font-size: 1.188rem;
+}
+
+.stats-gender {
+  font-size: 1.563;
+}
+
+.type-list {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+}
+
+.ability:after {
+  content: "?";
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  color: #30a7d7;
+  background: white;
+}
+
+.poison,
+.fire,
+.psychic {
+  color: white;
+}
+
+.grass {
+  background-color: #9bcc50;
+}
+
+.poison {
+  background-color: #b97fc9;
+}
+
+.fire {
+  background-color: #fd7d24;
+}
+
+.psychic {
+  background-color: #f366b9;
+}
+
+.ice {
+  background-color: #51c4e7;
+}
+
+@media only screen and (max-width: 1024px) {
+  .type-list {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+  }
+
+  .type-label {
+    margin: 0 5px 5px 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .row {
+    display: inline;
+  }
+
+  .wrapper {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 480px;
+  }
+  .blurb-container {
+    text-align: center;
+  }
+
+  .blurb {
+    text-align: center;
+  }
+
+  .type-list {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+  }
+
+  .type-label {
+    margin: 0 5px 5px 0;
+  }
+}

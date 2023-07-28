@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link
       href="https://db.onlinewebfonts.com/c/d2d21cf0ee4c1d969d8a4dccc587ab26?family=Flexo-Medium"
       rel="stylesheet"
@@ -11,76 +16,222 @@
     <title>index</title>
   </head>
   <body>
-    <main class="wrapper">
-      <h1 class="title">Bulbasaur <span class="poke-num">#0001</span></h1>
-      <div class="row">
-        <div class="column">
+    <header class="header-wrapper">
+      <div class="header-upper">
+        <h1 class="header-title">Name or Number</h1>
+        <div class="search-container">
+          <form>
+            <input
+              class="search-bar"
+              type="text"
+              placeholder=""
+              name="search"
+            />
+            <button type="submit" class="search-button">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+          <span class="upper-search-blurb">
+            Use the Advanced Search to explore Pokémon by type, weakness,
+            Ability, and more!
+          </span>
+        </div>
+      </div>
+      <div class="header-lower">
+        <span class="lower-search-blurb">
+          Search for a Pokémon by name or using its National Pokémon number.
+        </span>
+      </div>
+      <div class="lower-bar"></div>
+    </header>
+    <main>
+      <div>
+        <label class="drop-down-text" for="poke-search">Sort By</label>
+        <select name="poke-search" id="poke-search">
+          <option value="lowest-number">Lowest Number (First)</option>
+          <option value="highest-number">Highest Number (First)</option>
+          <option value="A-Z">A-Z</option>
+          <option value="Z-A">Z-A</option>
+        </select>
+      </div>
+      <div class="poke-container">
+        <div>
           <img
             class="poke-picture"
             src="https://cdn.discordapp.com/attachments/221790947250405376/1131748385897054289/bulbasaur.png"
             alt="A happy Bulbasaur"
           />
+          <span class="poke-number"> #0001</span>
+          <h2 class="poke-name">Bulbasaur</h2>
+          <div>
+            <ul class="type-list">
+              <li class="type-list-item">Grass</li>
+              <li class="type-list-item">Poison</li>
+            </ul>
+          </div>
         </div>
-        <div class="column">
-          <div class="blurb-container">
-            <p class="blurb">
-              There is a plant seed right on its back from the day this Pokémon
-              is born. The seed slowly grows larger.
-            </p>
-          </div>
-          <div class="stats">
-            <section>
-              <h3 class="stats-title">Height</h3>
-              <ul>
-                <li class="stats-data">2' 04"</li>
-              </ul>
-            </section>
-            <section>
-              <h3 class="stats-title">Category</h3>
-              <ul>
-                <li class="stats-data">Seed</li>
-              </ul>
-            </section>
-            <section>
-              <h3 class="stats-title">Weight</h3>
-              <ul>
-                <li class="stats-data">15.2 lbs</li>
-              </ul>
-            </section>
-            <section>
-              <h3 class="stats-title">Abilities</h3>
-              <ul>
-                <li class="stats-data ability">Overgrow</li>
-              </ul>
-            </section>
-            <section>
-              <h3 class="stats-title">Gender</h3>
-              <ul>
-                <li class="stats-data stats-gender">&male; &nbsp &female;</li>
-              </ul>
-            </section>
-          </div>
+        <div>
+          <img
+            class="poke-picture"
+            src="./images/ivysaur.png"
+            alt="A regal Ivysaur"
+          />
+          <span class="poke-number"> #0002</span>
+          <h2 class="poke-name">Ivysaur</h2>
           <div>
-            <h2 class="section-header">Type</h2>
-            <div class="type-grid">
-              <ul class="type-list">
-                <li class="type-label grass">Grass</li>
-                <li class="type-label poison">Poison</li>
-              </ul>
-            </div>
+            <ul class="type-list">
+              <li class="type-list-item">Grass</li>
+              <li class="type-list-item">Poison</li>
+            </ul>
           </div>
+        </div>
+        <div>
+          <img
+            class="poke-picture"
+            src="./images/venusaur.png"
+            alt="An angry Venusaur"
+          />
+          <span class="poke-number"> #0003</span>
+          <h2 class="poke-name">Venusaur</h2>
           <div>
-            <h2 class="section-header">Weaknesses</h2>
-            <div class="type-grid">
-              <ul class="type-list">
-                <li class="type-label fire">Fire</li>
-                <li class="type-label psychic">Psychic</li>
-                <li class="type-label ice">Ice</li>
-              </ul>
-            </div>
+            <ul class="type-list">
+              <li class="type-list-item">Grass</li>
+              <li class="type-list-item">Poison</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <img
+            class="poke-picture"
+            src="./images/charmander.png"
+            alt="A happy Charmander"
+          />
+          <span class="poke-number"> #0004</span>
+          <h2 class="poke-name">Charmander</h2>
+          <div>
+            <ul class="type-list">
+              <li class="type-list-item">Fire</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <img
+            class="poke-picture"
+            src="./images/charmeleon.png"
+            alt="A regal Charmeleon"
+          />
+          <span class="poke-number"> #0005</span>
+          <h2 class="poke-name">Charmeleon</h2>
+          <div>
+            <ul class="type-list">
+              <li class="type-list-item">Fire</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <img
+            class="poke-picture"
+            src="./images/Charizard.png"
+            alt="A Regal Charizard"
+          />
+          <span class="poke-number"> #0006</span>
+          <h2 class="poke-name">Charizard</h2>
+          <div>
+            <ul class="type-list">
+              <li class="type-list-item">Fire</li>
+              <li class="type-list-item">Flying</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <img
+            class="poke-picture"
+            src="./images/squirtle.png"
+            alt="A silly Squirtle"
+          />
+          <span class="poke-number"> #0007</span>
+          <h2 class="poke-name">Squirtle</h2>
+          <div>
+            <ul class="type-list">
+              <li class="type-list-item">Water</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <img
+            class="poke-picture"
+            src="./images/Wartortle.png"
+            alt="A squared up Wartortle"
+          />
+          <span class="poke-number"> #0008</span>
+          <h2 class="poke-name">Wartortle</h2>
+          <div>
+            <ul class="type-list">
+              <li class="type-list-item">Water</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <img
+            class="poke-picture"
+            src="./images/blastoise.png"
+            alt="A smug Blastoise"
+          />
+          <span class="poke-number"> #0009</span>
+          <h2 class="poke-name">Blastoise</h2>
+          <div>
+            <ul class="type-list">
+              <li class="type-list-item">Water</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <img
+            class="poke-picture"
+            src="./images/caterpie.png"
+            alt="A cute Caterpie"
+          />
+          <span class="poke-number"> #00010 </span>
+          <h2 class="poke-name">Caterpie</h2>
+          <div>
+            <ul class="type-list">
+              <li class="type-list-item">Bug</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <img
+            class="poke-picture"
+            src="./images/metapod.png"
+            alt="A sleepy Metapod"
+          />
+          <span class="poke-number"> #0011 </span>
+          <h2 class="poke-name">Metapod</h2>
+          <div>
+            <ul class="type-list">
+              <li class="type-list-item">Bug</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <img
+            class="poke-picture"
+            src="./images/butterfree.png"
+            alt="A curious Butterfree"
+          />
+          <span class="poke-number"> #0012 </span>
+          <h2 class="poke-name">Butterfree</h2>
+          <div>
+            <ul class="type-list">
+              <li class="type-list-item">Bug</li>
+              <li class="type-list-item">Flying</li>
+            </ul>
           </div>
         </div>
       </div>
+      <button type="button" class="more-pokemon-button">
+        Load more Pokémon
+      </button>
     </main>
   </body>
 </html>
