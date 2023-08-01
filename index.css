@@ -46,7 +46,8 @@ ul {
 }
 
 .search-container {
-  margin-bottom: 45px;
+  margin-bottom: 25px;
+  width: 100%;
 }
 
 .search-bar {
@@ -54,7 +55,6 @@ ul {
   border-radius: 5px;
   border-color: #616161;
   height: 50px;
-  width: 80%;
   margin-bottom: 20px;
 }
 
@@ -73,19 +73,23 @@ button {
   font-size: 1.25rem;
 }
 
-.upper-search-blurb,
-.lower-search-blurb {
+.search-blurb {
   color: white;
-  max-width: 100%;
   display: block;
+  width: 100%;
+}
+
+.upper-search-blurb {
+  margin-bottom: 35px;
 }
 
 .lower-search-blurb {
+  display: block;
   background-color: #4dad5b;
   border-radius: 5px;
-  font-size: 1.25rem;
-  padding: 15px;
-  margin-left: -15px;
+  color: white;
+  padding: 20px;
+  margin-left: -20px;
 }
 
 .drop-down-wrapper {
