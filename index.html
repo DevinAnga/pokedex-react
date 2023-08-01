@@ -36,25 +36,22 @@
             Ability, and more!
           </span>
         </div>
-      </div>
-      <div class="header-lower">
         <span class="lower-search-blurb">
           Search for a Pokémon by name or using its National Pokémon number.
         </span>
       </div>
-      <div class="lower-bar"></div>
     </header>
     <main>
-      <div>
-        <label class="drop-down-text" for="poke-search">Sort By</label>
-        <select name="poke-search" id="poke-search">
+      <div class="drop-down-wrapper">
+        <label class="drop-down-text" for="poke-search">Sort By<br /></label>
+        <select class="drop-down-menu" name="poke-search" id="poke-search">
           <option value="lowest-number">Lowest Number (First)</option>
           <option value="highest-number">Highest Number (First)</option>
           <option value="A-Z">A-Z</option>
           <option value="Z-A">Z-A</option>
         </select>
       </div>
-      <div class="poke-container">
+      <div class="poke-wrapper">
         <div>
           <img
             class="poke-picture"
@@ -63,10 +60,10 @@
           />
           <span class="poke-number"> #0001</span>
           <h2 class="poke-name">Bulbasaur</h2>
-          <div>
+          <div class="type-list-grid">
             <ul class="type-list">
-              <li class="type-list-item">Grass</li>
-              <li class="type-list-item">Poison</li>
+              <li class="type-list-item grass">Grass</li>
+              <li class="type-list-item poison">Poison</li>
             </ul>
           </div>
         </div>
@@ -80,8 +77,8 @@
           <h2 class="poke-name">Ivysaur</h2>
           <div>
             <ul class="type-list">
-              <li class="type-list-item">Grass</li>
-              <li class="type-list-item">Poison</li>
+              <li class="type-list-item grass">Grass</li>
+              <li class="type-list-item poison">Poison</li>
             </ul>
           </div>
         </div>
@@ -95,8 +92,8 @@
           <h2 class="poke-name">Venusaur</h2>
           <div>
             <ul class="type-list">
-              <li class="type-list-item">Grass</li>
-              <li class="type-list-item">Poison</li>
+              <li class="type-list-item grass">Grass</li>
+              <li class="type-list-item poison">Poison</li>
             </ul>
           </div>
         </div>
@@ -110,7 +107,7 @@
           <h2 class="poke-name">Charmander</h2>
           <div>
             <ul class="type-list">
-              <li class="type-list-item">Fire</li>
+              <li class="type-list-item fire">Fire</li>
             </ul>
           </div>
         </div>
@@ -124,7 +121,7 @@
           <h2 class="poke-name">Charmeleon</h2>
           <div>
             <ul class="type-list">
-              <li class="type-list-item">Fire</li>
+              <li class="type-list-item fire">Fire</li>
             </ul>
           </div>
         </div>
@@ -138,8 +135,8 @@
           <h2 class="poke-name">Charizard</h2>
           <div>
             <ul class="type-list">
-              <li class="type-list-item">Fire</li>
-              <li class="type-list-item">Flying</li>
+              <li class="type-list-item fire">Fire</li>
+              <li class="type-list-item flying">Flying</li>
             </ul>
           </div>
         </div>
@@ -153,7 +150,7 @@
           <h2 class="poke-name">Squirtle</h2>
           <div>
             <ul class="type-list">
-              <li class="type-list-item">Water</li>
+              <li class="type-list-item water">Water</li>
             </ul>
           </div>
         </div>
@@ -167,7 +164,7 @@
           <h2 class="poke-name">Wartortle</h2>
           <div>
             <ul class="type-list">
-              <li class="type-list-item">Water</li>
+              <li class="type-list-item water">Water</li>
             </ul>
           </div>
         </div>
@@ -181,7 +178,7 @@
           <h2 class="poke-name">Blastoise</h2>
           <div>
             <ul class="type-list">
-              <li class="type-list-item">Water</li>
+              <li class="type-list-item water">Water</li>
             </ul>
           </div>
         </div>
@@ -195,7 +192,7 @@
           <h2 class="poke-name">Caterpie</h2>
           <div>
             <ul class="type-list">
-              <li class="type-list-item">Bug</li>
+              <li class="type-list-item bug">Bug</li>
             </ul>
           </div>
         </div>
@@ -209,7 +206,7 @@
           <h2 class="poke-name">Metapod</h2>
           <div>
             <ul class="type-list">
-              <li class="type-list-item">Bug</li>
+              <li class="type-list-item bug">Bug</li>
             </ul>
           </div>
         </div>
@@ -223,8 +220,8 @@
           <h2 class="poke-name">Butterfree</h2>
           <div>
             <ul class="type-list">
-              <li class="type-list-item">Bug</li>
-              <li class="type-list-item">Flying</li>
+              <li class="type-list-item bug">Bug</li>
+              <li class="type-list-item flying">Flying</li>
             </ul>
           </div>
         </div>
