@@ -35,6 +35,7 @@ button {
 .section {
   width: 100%;
   max-width: 1024px;
+  padding: 0 24px;
   margin: 0 auto;
 }
 
@@ -118,9 +119,13 @@ button {
 }
 
 .drop-down-wrapper {
-  max-width: 80%;
-  margin: auto auto;
-  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto 40px;
 }
 
 .drop-down-text {
@@ -128,32 +133,22 @@ button {
   font-size: 1.25rem;
 }
 
-.drop-down-menu {
+.sort-select {
   background-color: #313131;
+  padding: 0 15px;
   color: white;
   font-size: 1rem;
-  height: 35px;
-  border-radius: 5px;
+  height: 50px;
   width: 100%;
-  padding-left: 15px;
-  margin-bottom: 20px;
+  border-radius: 5px;
 }
 
 .poke-picture {
   background-color: #f2f2f2;
-  max-width: 100%;
-  max-height: 100%;
-  height: 100%;
   width: 100%;
   display: block;
   border-radius: 5px;
   margin: 5px auto;
-}
-
-.poke-number,
-.poke-name,
-.type-list {
-  margin: auto auto auto 10px;
 }
 
 .poke-number {
@@ -221,43 +216,35 @@ button {
   padding: 10px;
 }
 
+.poke-wrapper {
+  gap: 50px 15px;
+  display: grid;
+}
+
 @media only screen and (min-width: 768px) {
+  .drop-down-wrapper {
+    max-width: 100%;
+    justify-content: end;
+    grid-template-columns: auto max-content;
+  }
+
   .header-content {
     grid-template-columns: 1fr 1fr;
     gap: 40px;
   }
 
-  .drop-down-wrapper {
-    max-width: 75%;
-  }
-
-  .drop-down-menu {
-    height: 50px;
+  .sort-select {
+    width: 300px;
   }
 
   .poke-wrapper {
-    display: grid;
     grid-template-columns: auto auto;
-  }
-
-  .poke-grid {
-    margin: auto 10px auto auto;
   }
 }
 
 @media only screen and (min-width: 1080px) {
   main {
     display: grid;
-  }
-
-  .drop-down-wrapper {
-    max-width: 100%;
-    display: grid;
-    justify-self: end;
-  }
-
-  .drop-down-menu {
-    width: 20%;
   }
 
   .poke-wrapper {
