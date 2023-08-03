@@ -15,9 +15,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
   </head>
-  <body>
+  <body class="wrapper">
     <header class="header-wrapper">
-      <div class="header-upper">
+      <div class="header-part1">
         <h1 class="header-title">Name or Number</h1>
         <div class="search-container">
           <form>
@@ -31,12 +31,14 @@
               <i class="fa fa-search"></i>
             </button>
           </form>
+          <span class="search-blurb part1-search-blurb">
+            Use the Advanced Search to explore Pokémon by type, weakness,
+            Ability, and more!
+          </span>
         </div>
-        <span class="search-blurb upper-search-blurb">
-          Use the Advanced Search to explore Pokémon by type, weakness, Ability,
-          and more!
-        </span>
-        <span class="search blurb lower-search-blurb">
+      </div>
+      <div class="header-part2">
+        <span class="search blurb part2-search-blurb">
           Search for a Pokémon by name or using its National Pokémon number.
         </span>
       </div>
@@ -52,7 +54,7 @@
         </select>
       </div>
       <div class="poke-wrapper">
-        <div>
+        <div class="poke-grid">
           <img
             class="poke-picture"
             src="https://cdn.discordapp.com/attachments/221790947250405376/1131748385897054289/bulbasaur.png"
@@ -67,7 +69,7 @@
             </ul>
           </div>
         </div>
-        <div>
+        <div class="poke-grid">
           <img
             class="poke-picture"
             src="./images/ivysaur.png"
@@ -82,7 +84,7 @@
             </ul>
           </div>
         </div>
-        <div>
+        <div class="poke-grid">
           <img
             class="poke-picture"
             src="./images/venusaur.png"
@@ -97,7 +99,7 @@
             </ul>
           </div>
         </div>
-        <div>
+        <div class="poke-grid">
           <img
             class="poke-picture"
             src="./images/charmander.png"
@@ -111,7 +113,7 @@
             </ul>
           </div>
         </div>
-        <div>
+        <div class="poke-grid">
           <img
             class="poke-picture"
             src="./images/charmeleon.png"
@@ -125,7 +127,7 @@
             </ul>
           </div>
         </div>
-        <div>
+        <div class="poke-grid">
           <img
             class="poke-picture"
             src="./images/Charizard.png"
@@ -140,7 +142,7 @@
             </ul>
           </div>
         </div>
-        <div>
+        <div class="poke-grid">
           <img
             class="poke-picture"
             src="./images/squirtle.png"
@@ -154,7 +156,7 @@
             </ul>
           </div>
         </div>
-        <div>
+        <div class="poke-grid">
           <img
             class="poke-picture"
             src="./images/Wartortle.png"
@@ -168,7 +170,7 @@
             </ul>
           </div>
         </div>
-        <div>
+        <div class="poke-grid">
           <img
             class="poke-picture"
             src="./images/blastoise.png"
@@ -182,7 +184,7 @@
             </ul>
           </div>
         </div>
-        <div>
+        <div class="poke-grid">
           <img
             class="poke-picture"
             src="./images/caterpie.png"
@@ -196,7 +198,7 @@
             </ul>
           </div>
         </div>
-        <div>
+        <div class="poke-grid">
           <img
             class="poke-picture"
             src="./images/metapod.png"
@@ -210,7 +212,7 @@
             </ul>
           </div>
         </div>
-        <div>
+        <div class="poke-grid">
           <img
             class="poke-picture"
             src="./images/butterfree.png"
@@ -226,9 +228,11 @@
           </div>
         </div>
       </div>
-      <button type="button" class="more-pokemon-button">
-        Load more Pokémon
-      </button>
+      <div class="more-pokemon-button-wrapper">
+        <button class="more-pokemon-button" type="button">
+          Load more Pokémon
+        </button>
+      </div>
     </main>
   </body>
 </html>
