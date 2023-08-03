@@ -95,24 +95,23 @@ button {
   font-size: 1.25rem;
 }
 
-.search-blurb {
+.search-subtext,
+.search-text {
   color: white;
-  display: block;
-  width: 100%;
 }
 
-.part2-search-blurb {
+.search-text {
   display: block;
   background-color: #4dad5b;
   border-radius: 5px;
-  color: white;
   padding: 20px;
+  font-size: 1.125rem;
 }
 
 .drop-down-wrapper {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
+  gap: 15px;
   justify-content: center;
   align-items: center;
   max-width: 400px;
@@ -166,6 +165,13 @@ button {
   font-size: 0.75rem;
   height: 20px;
   width: 100px;
+}
+
+.poison,
+.fire,
+.water,
+.bug {
+  color: #fff;
 }
 
 .grass {
@@ -234,10 +240,6 @@ button {
 }
 
 @media only screen and (min-width: 1080px) {
-  main {
-    display: grid;
-  }
-
   .poke-wrapper {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
