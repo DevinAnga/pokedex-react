@@ -101,15 +101,6 @@ button {
   width: 100%;
 }
 
-.part1-search-blurb,
-.part2-search-blurb {
-  white-space: normal;
-}
-
-.part1-search-blurb {
-  white-space: normal;
-}
-
 .part2-search-blurb {
   display: block;
   background-color: #4dad5b;
