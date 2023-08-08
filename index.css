@@ -59,8 +59,7 @@ button {
 .header-search-form {
   margin-bottom: 15px;
   display: grid;
-  grid-template-columns: auto max-content;
-  gap: 25px;
+  grid-template-columns: 1fr;
 }
 
 .main {
@@ -77,6 +76,19 @@ button {
 
 .search-container {
   width: 100%;
+}
+
+.header-label {
+  display: block;
+  color: white;
+  font-size: 1.625rem;
+  padding-bottom: 10px;
+}
+
+.search-end {
+  display: grid;
+  grid-template-columns: max-content auto;
+  gap: 20px;
 }
 
 .search-bar {
@@ -100,12 +112,16 @@ button {
   color: white;
 }
 
+.search-subtext {
+  font-size: 1.125rem;
+}
+
 .search-text {
   display: block;
   background-color: #4dad5b;
   border-radius: 5px;
-  padding: 20px;
-  font-size: 1.125rem;
+  padding: 25px;
+  font-size: 1.25rem;
 }
 
 .drop-down-wrapper {

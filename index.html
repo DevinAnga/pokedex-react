@@ -16,22 +16,39 @@
     <title>index</title>
   </head>
   <body>
+    <div>
+      <ul>
+        <a href="./index.html"><li>Pokédex</li></a>
+        <li>Video Games & Apps</li>
+        <li>Trading Card Game</li>
+        <li>Pokémon TV</li>
+        <li>Play! Pokémon Events</li>
+        <li>News</li>
+      </ul>
+    </div>
     <header class="header">
       <div class="section">
         <div class="header-content">
           <div>
-            <h1 class="header-title">Name or Number</h1>
             <div class="search-container">
               <form class="header-search-form">
-                <input
-                  class="search-bar"
-                  type="text"
-                  placeholder=""
-                  name="search"
-                />
-                <button type="submit" class="search-button">
-                  <i class="fa fa-search"></i>
-                </button>
+                <div>
+                  <label class="header-label" for="search" class="header-title"
+                    >Name or Number</label
+                  >
+                </div>
+                <div class="search-end">
+                  <input
+                    id="search"
+                    class="search-bar"
+                    type="text"
+                    placeholder=""
+                    name="search"
+                  />
+                  <button type="submit" class="search-button">
+                    <i class="fa fa-search"></i>
+                  </button>
+                </div>
               </form>
               <span class="search-subtext">
                 Use the Advanced Search to explore Pokémon by type, weakness,
@@ -63,11 +80,13 @@
           </div>
           <div class="poke-wrapper">
             <div>
-              <img
-                class="poke-picture"
-                src="https://cdn.discordapp.com/attachments/221790947250405376/1131748385897054289/bulbasaur.png"
-                alt="A happy Bulbasaur"
-              />
+              <a target="_blank" href="./bulbasaur.html">
+                <img
+                  class="poke-picture"
+                  src="https://cdn.discordapp.com/attachments/221790947250405376/1131748385897054289/bulbasaur.png"
+                  alt="A happy Bulbasaur"
+                />
+              </a>
               <span class="poke-number"> #0001</span>
               <h2 class="poke-name">Bulbasaur</h2>
               <div class="type-list-grid">
