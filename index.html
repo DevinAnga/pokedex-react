@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./index.css" />
+    <script src="./index.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -11,22 +12,50 @@
       href="https://db.onlinewebfonts.com/c/d2d21cf0ee4c1d969d8a4dccc587ab26?family=Flexo-Medium"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
   </head>
   <body>
-    <div>
-      <ul>
-        <a href="./index.html"><li>Pokédex</li></a>
-        <li>Video Games & Apps</li>
-        <li>Trading Card Game</li>
-        <li>Pokémon TV</li>
-        <li>Play! Pokémon Events</li>
-        <li>News</li>
-      </ul>
-    </div>
     <header class="header">
+      <div class="top-nav">
+        <a
+          class="hamburger-icon"
+          href="javascript:void(0);"
+          class="icon"
+          onclick="myFunction()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="#" class="login-button">Log In</a>
+        <div id="myLinks" class="top-nav-links">
+          <ul class="nav-list">
+            <li class="nav-list-item nav-pokedex"><a href="./index.html"></a>Pokédex</a></li>
+            <li class="nav-video-game">Video Games & Apps</li>
+            <li class="nav-card-game">Trading Card Game</li>
+            <li class="nav-tv">Pokémon TV</li>
+            <li class="nav-events">
+              Play! Pokémon Events
+              <a
+                class="nav-events-submenu"
+                href="javascript:void(0);"
+                class="icon"
+                onclick=""
+              >
+                <i class="fa fa-bars nav-events-submenu"></i>
+              </a>
+            </li>
+            <li class="nav-news">News</li>
+          </ul>
+        </div>
+        <span class="span-pokedex">Pokédex</span>
+      </div>
+    </header>
+    <section id="search-header" class="search-header">
       <div class="section">
         <div class="header-content">
           <div>
@@ -63,8 +92,8 @@
           </div>
         </div>
       </div>
-    </header>
-    <main class="main">
+    </section>
+    <main id="main" class="main">
       <div class="main-content">
         <div class="section">
           <div class="drop-down-wrapper">
