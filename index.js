@@ -1,14 +1,15 @@
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  var y = document.getElementById("search-header");
-  var z = document.getElementById("main");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-    y.style.display = "block";
-    z.style.display = "block";
+function toggleMenu() {
+  const myLinks = document.getElementById("myLinks");
+  const navOverlay = document.getElementsByClassName("navigation-overlay")[0];
+  const body = document.getElementById("body");
+
+  if (myLinks.style.display === "block") {
+    myLinks.style.display = "none";
+    navOverlay.classList.add("hidden");
+    body.classList.remove("navOpened");
   } else {
-    x.style.display = "block";
-    y.style.display = "none";
-    z.style.display = "none";
+    myLinks.style.display = "block";
+    navOverlay.classList.remove("hidden");
+    body.classList.add("navOpened");
   }
 }

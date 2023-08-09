@@ -20,14 +20,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
   </head>
-  <body>
+  <body id="body">
     <header class="header">
+      <div class="navigation-overlay"></div>
       <div class="top-nav">
         <a
           class="hamburger-icon"
           href="javascript:void(0);"
           class="icon"
-          onclick="myFunction()"
+          onclick="toggleMenu()"
         >
           <i class="fa fa-bars"></i>
         </a>
@@ -52,8 +53,8 @@
             <li class="nav-news">News</li>
           </ul>
         </div>
-        <span class="span-pokedex">Pokédex</span>
       </div>
+      <h3 class="pokedex-title">Pokédex</h3>
     </header>
     <section id="search-header" class="search-header">
       <div class="section">
@@ -292,5 +293,6 @@
         </div>
       </div>
     </main>
+    <div class="navigation-overlay hidden"></div>
   </body>
 </html>
