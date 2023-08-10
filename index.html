@@ -22,9 +22,9 @@
   </head>
   <body id="body">
     <header class="header">
-      <div class="navigation-overlay"></div>
       <div class="top-nav">
         <a
+          aria-label="Open Hamburger menu by clicking here"
           class="hamburger-icon"
           href="javascript:void(0);"
           class="icon"
@@ -35,22 +35,12 @@
         <a href="#" class="login-button">Log In</a>
         <div id="myLinks" class="top-nav-links">
           <ul class="nav-list">
-            <li class="nav-list-item nav-pokedex"><a href="./index.html"></a>Pokédex</a></li>
-            <li class="nav-video-game">Video Games & Apps</li>
-            <li class="nav-card-game">Trading Card Game</li>
-            <li class="nav-tv">Pokémon TV</li>
-            <li class="nav-events">
-              Play! Pokémon Events
-              <a
-                class="nav-events-submenu"
-                href="javascript:void(0);"
-                class="icon"
-                onclick=""
-              >
-                <i class="fa fa-bars nav-events-submenu"></i>
-              </a>
-            </li>
-            <li class="nav-news">News</li>
+            <li class="nav-list-item nav-list-item-red"><a aria-label="Return to Pokedex page here" href="./index.html"></a>Pokédex</a></li>
+            <li class="nav-list-item nav-list-item-orange">Video Games & Apps</li>
+            <li class="nav-list-item nav-list-item-yellow">Trading Card Game</li>
+            <li class="nav-list-item nav-list-item-green">Pokémon TV</li>
+            <li class="nav-list-item nav-list-item-light-blue">Play! Pokémon Events</li>
+            <li class="nav-list-item nav-list-item-dark-blue">News</li>
           </ul>
         </div>
       </div>
@@ -75,7 +65,7 @@
                     placeholder=""
                     name="search"
                   />
-                  <button type="submit" class="search-button">
+                  <button type="submit" class="search-button" aria-label="Click to search Pokedex using input text">
                     <i class="fa fa-search"></i>
                   </button>
                 </div>
