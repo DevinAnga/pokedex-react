@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-export default function Home() {
+export default function Blog() {
   const greetingString = "This is a greeting ";
-  const array = ["Devin", "Joel", "Ryan"];
+  const array = ["Devin", "Joel", "RMatt"];
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
