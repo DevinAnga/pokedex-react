@@ -1,118 +1,375 @@
 import Image from "next/image";
+import bulbasaur from "next/bulbasaur.png";
+import ivysaur from "next/ivysaur.png";
+import venusaur from "next/venusaur.png";
+import charmander from "next/charmander.png";
+import charmeleon from "next/charmeleon.png";
+import charizard from "next/charizard.png";
+import squirtle from "next/squirtle.png";
+import wartortle from "next/wartortle.png";
+import blastoise from "next/blastoise.png";
+import caterpie from "next/caterpie.png";
+import metapod from "next/metapod.png";
+import butterfree from "next/butterfree.png";
+// function toggleMenu() {
+//   const myLinks = document.getElementById("myLinks");
+//   const navOverlay = document.getElementsByClassName("navigation-overlay")[0];
+//   const body = document.getElementById("body");
+
+//   if (myLinks.style.display === "block") {
+//     myLinks.style.display = "none";
+//     navOverlay.classList.add("hidden");
+//     body.classList.remove("navOpened");
+//   } else {
+//     myLinks.style.display = "block";
+//     navOverlay.classList.remove("hidden");
+//     body.classList.add("navOpened");
+//   }
+// }
 
 export default function Home() {
-  const greetingString = "This is a greeting ";
-  const array = ["Devin", "Joel", "Ryan"];
-
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        {greetingString}
-        {array.map((name) => name)}
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    <>
+      <body id="body">
+        <header className="header">
+          <div className="nav-mobile">
+            <a
+              aria-label="Open Hamburger menu by clicking here"
+              className="hamburger-icon icon"
+              href="javascript:void(0);"
+              // onClick={toggleMenu}
+            >
+              <i className="fa fa-bars"></i>
+            </a>
+            <a href="#" className="login-button">
+              Log In
+            </a>
+            <div id="myLinks" className="background-white">
+              <ul className="nav-list">
+                <li className="nav-list-item-red-mobile">
+                  <a
+                    aria-label="Return to Pokedex page here"
+                    href="./index.html"
+                  >
+                    Pokédex
+                  </a>
+                </li>
+                <li className="nav-list-item-orange-mobile">
+                  Video Games & Apps
+                </li>
+                <li className="nav-list-item-yellow-mobile">
+                  Trading Card Game
+                </li>
+                <li className="nav-list-item-green-mobile">Pokémon TV</li>
+                <li className="nav-list-item-light-blue-mobile">
+                  Play! Pokémon Events
+                </li>
+                <li className="nav-list-item-dark-blue-mobile">News</li>
+              </ul>
+            </div>
+          </div>
+          <div className="nav-desktop">
+            <div className="background-white">
+              <ul className="nav-list-desktop">
+                <li className="nav-list-item-desktop nav-list-item-red-desktop">
+                  <a
+                    aria-label="Return to Pokedex page here"
+                    href="./index.html"
+                  >
+                    Pokédex
+                  </a>
+                </li>
+                <li className="nav-list-item-desktop nav-list-item-orange-desktop">
+                  Video Games & Apps
+                </li>
+                <li className="nav-list-item-desktop nav-list-item-yellow-desktop">
+                  Trading Card Game
+                </li>
+                <li className="nav-list-item-desktop nav-list-item-green-desktop">
+                  Pokémon TV
+                </li>
+                <li className="nav-list-item-desktop nav-list-item-light-blue-desktop">
+                  Play! Pokémon Events
+                </li>
+                <li className="nav-list-item-desktop nav-list-item-dark-blue-desktop">
+                  News
+                </li>
+              </ul>
+            </div>
+          </div>
+          <h3 className="pokedex-title">Pokédex</h3>
+        </header>
+        <section id="search-header" className="search-header">
+          <div className="section">
+            <div className="header-content">
+              <div>
+                <div className="search-container">
+                  <form className="header-search-form">
+                    <div>
+                      <label className="header-label" htmlFor="search">
+                        Name or Number
+                      </label>
+                    </div>
+                    <div className="search-end">
+                      <input
+                        id="search"
+                        className="search-bar"
+                        type="text"
+                        placeholder=""
+                        name="search"
+                      />
+                      <button
+                        type="submit"
+                        className="search-button"
+                        aria-label="Click to search Pokedex using input text"
+                      >
+                        <i className="fa fa-search"></i>
+                      </button>
+                    </div>
+                  </form>
+                  <span className="search-subtext">
+                    Use the Advanced Search to explore Pokémon by type,
+                    weakness, Ability, and more!
+                  </span>
+                </div>
+              </div>
+              <div>
+                <span className="search-text">
+                  Search for a Pokémon by name or using its National Pokémon
+                  number.
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <main id="main" className="main">
+          <div className="main-content">
+            <div className="section">
+              <div className="drop-down-wrapper">
+                <label className="drop-down-text" htmlFor="poke-search">
+                  Sort By
+                  <br />
+                </label>
+                <select
+                  className="sort-select"
+                  name="poke-search"
+                  id="poke-search"
+                >
+                  <option value="lowest-number">Lowest Number (First)</option>
+                  <option value="highest-number">Highest Number (First)</option>
+                  <option value="A-Z">A-Z</option>
+                  <option value="Z-A">Z-A</option>
+                </select>
+              </div>
+              <div className="poke-wrapper">
+                <div>
+                  <Image
+                    className="poke-picture"
+                    src={bulbasaur}
+                    alt="A happy Bulbasaur"
+                    width={800}
+                    height={500}
+                  />
+                  <span className="poke-number"> #0001</span>
+                  <h2 className="poke-name">Bulbasaur</h2>
+                  <div className="type-list-grid">
+                    <ul className="type-list">
+                      <li className="type-list-item grass">Grass</li>
+                      <li className="type-list-item poison">Poison</li>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <Image
+                    className="poke-picture"
+                    src={ivysaur}
+                    alt="A regal Ivysaur"
+                    width={800}
+                    height={500}
+                  />
+                  <span className="poke-number"> #0002</span>
+                  <h2 className="poke-name">Ivysaur</h2>
+                  <div>
+                    <ul className="type-list">
+                      <li className="type-list-item grass">Grass</li>
+                      <li className="type-list-item poison">Poison</li>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <Image
+                    className="poke-picture"
+                    src={venusaur}
+                    alt="An angry Venusaur"
+                    width={800}
+                    height={500}
+                  />
+                  <span className="poke-number"> #0003</span>
+                  <h2 className="poke-name">Venusaur</h2>
+                  <div>
+                    <ul className="type-list">
+                      <li className="type-list-item grass">Grass</li>
+                      <li className="type-list-item poison">Poison</li>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <Image
+                    className="poke-picture"
+                    src={charmander}
+                    alt="A happy Charmander"
+                    width={800}
+                    height={500}
+                  />
+                  <span className="poke-number"> #0004</span>
+                  <h2 className="poke-name">Charmander</h2>
+                  <div>
+                    <ul className="type-list">
+                      <li className="type-list-item fire">Fire</li>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <Image
+                    className="poke-picture"
+                    src={charmeleon}
+                    alt="A regal Charmeleon"
+                    width={800}
+                    height={500}
+                  />
+                  <span className="poke-number"> #0005</span>
+                  <h2 className="poke-name">Charmeleon</h2>
+                  <div>
+                    <ul className="type-list">
+                      <li className="type-list-item fire">Fire</li>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <Image
+                    className="poke-picture"
+                    src={charizard}
+                    alt="A Regal Charizard"
+                    width={800}
+                    height={500}
+                  />
+                  <span className="poke-number"> #0006</span>
+                  <h2 className="poke-name">Charizard</h2>
+                  <div>
+                    <ul className="type-list">
+                      <li className="type-list-item fire">Fire</li>
+                      <li className="type-list-item flying">Flying</li>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <Image
+                    className="poke-picture"
+                    src={squirtle}
+                    alt="A silly Squirtle"
+                    width={800}
+                    height={500}
+                  />
+                  <span className="poke-number"> #0007</span>
+                  <h2 className="poke-name">Squirtle</h2>
+                  <div>
+                    <ul className="type-list">
+                      <li className="type-list-item water">Water</li>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <Image
+                    className="poke-picture"
+                    src={wartortle}
+                    alt="A squared up Wartortle"
+                    width={800}
+                    height={500}
+                  />
+                  <span className="poke-number"> #0008</span>
+                  <h2 className="poke-name">Wartortle</h2>
+                  <div>
+                    <ul className="type-list">
+                      <li className="type-list-item water">Water</li>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <Image
+                    className="poke-picture"
+                    src={blastoise}
+                    alt="A smug Blastoise"
+                    width={800}
+                    height={500}
+                  />
+                  <span className="poke-number"> #0009</span>
+                  <h2 className="poke-name">Blastoise</h2>
+                  <div>
+                    <ul className="type-list">
+                      <li className="type-list-item water">Water</li>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <Image
+                    className="poke-picture"
+                    src={caterpie}
+                    alt="A cute Caterpie"
+                    width={800}
+                    height={500}
+                  />
+                  <span className="poke-number"> #00010 </span>
+                  <h2 className="poke-name">Caterpie</h2>
+                  <div>
+                    <ul className="type-list">
+                      <li className="type-list-item bug">Bug</li>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <Image
+                    className="poke-picture"
+                    src={metapod}
+                    alt="A sleepy Metapod"
+                    width={800}
+                    height={500}
+                  />
+                  <span className="poke-number"> #0011 </span>
+                  <h2 className="poke-name">Metapod</h2>
+                  <div>
+                    <ul className="type-list">
+                      <li className="type-list-item bug">Bug</li>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <Image
+                    className="poke-picture"
+                    src={butterfree}
+                    alt="A curious Butterfree"
+                    width={800}
+                    height={500}
+                  />
+                  <span className="poke-number"> #0012 </span>
+                  <h2 className="poke-name">Butterfree</h2>
+                  <div>
+                    <ul className="type-list">
+                      <li className="type-list-item bug">Bug</li>
+                      <li className="type-list-item flying">Flying</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="more-pokemon-button-wrapper">
+                <button className="more-pokemon-button" type="button">
+                  Load more Pokémon
+                </button>
+              </div>
+            </div>
+          </div>
+        </main>
+        <div className="navigation-overlay hidden"></div>
+      </body>
+    </>
   );
 }
