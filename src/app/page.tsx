@@ -1,16 +1,16 @@
 import Image from "next/image";
-import bulbasaur from "next/bulbasaur.png";
-import ivysaur from "next/ivysaur.png";
-import venusaur from "next/venusaur.png";
-import charmander from "next/charmander.png";
-import charmeleon from "next/charmeleon.png";
-import charizard from "next/charizard.png";
-import squirtle from "next/squirtle.png";
-import wartortle from "next/wartortle.png";
-import blastoise from "next/blastoise.png";
-import caterpie from "next/caterpie.png";
-import metapod from "next/metapod.png";
-import butterfree from "next/butterfree.png";
+import bulbasaur from "./bulbasaur.png";
+import ivysaur from "/ivysaur.png";
+import venusaur from "/venusaur.png";
+import charmander from "/charmander.png";
+import charmeleon from "/charmeleon.png";
+import charizard from "/charizard.png";
+import squirtle from "/squirtle.png";
+import wartortle from "/wartortle.png";
+import blastoise from "/blastoise.png";
+import caterpie from "/caterpie.png";
+import metapod from "/metapod.png";
+import butterfree from "/butterfree.png";
 // function toggleMenu() {
 //   const myLinks = document.getElementById("myLinks");
 //   const navOverlay = document.getElementsByClassName("navigation-overlay")[0];
@@ -34,9 +34,8 @@ export default function Home() {
         <header className="header">
           <div className="nav-mobile">
             <a
-              aria-label="Open Hamburger menu by clicking here"
+              aria-label="Hamburger menu toggles menu"
               className="hamburger-icon icon"
-              href="javascript:void(0);"
               // onClick={toggleMenu}
             >
               <i className="fa fa-bars"></i>
@@ -167,8 +166,6 @@ export default function Home() {
                     className="poke-picture"
                     src={bulbasaur}
                     alt="A happy Bulbasaur"
-                    width={800}
-                    height={500}
                   />
                   <span className="poke-number"> #0001</span>
                   <h2 className="poke-name">Bulbasaur</h2>
@@ -184,8 +181,6 @@ export default function Home() {
                     className="poke-picture"
                     src={ivysaur}
                     alt="A regal Ivysaur"
-                    width={800}
-                    height={500}
                   />
                   <span className="poke-number"> #0002</span>
                   <h2 className="poke-name">Ivysaur</h2>
@@ -201,8 +196,6 @@ export default function Home() {
                     className="poke-picture"
                     src={venusaur}
                     alt="An angry Venusaur"
-                    width={800}
-                    height={500}
                   />
                   <span className="poke-number"> #0003</span>
                   <h2 className="poke-name">Venusaur</h2>
@@ -218,8 +211,6 @@ export default function Home() {
                     className="poke-picture"
                     src={charmander}
                     alt="A happy Charmander"
-                    width={800}
-                    height={500}
                   />
                   <span className="poke-number"> #0004</span>
                   <h2 className="poke-name">Charmander</h2>
@@ -234,8 +225,6 @@ export default function Home() {
                     className="poke-picture"
                     src={charmeleon}
                     alt="A regal Charmeleon"
-                    width={800}
-                    height={500}
                   />
                   <span className="poke-number"> #0005</span>
                   <h2 className="poke-name">Charmeleon</h2>
@@ -250,8 +239,6 @@ export default function Home() {
                     className="poke-picture"
                     src={charizard}
                     alt="A Regal Charizard"
-                    width={800}
-                    height={500}
                   />
                   <span className="poke-number"> #0006</span>
                   <h2 className="poke-name">Charizard</h2>
@@ -267,8 +254,6 @@ export default function Home() {
                     className="poke-picture"
                     src={squirtle}
                     alt="A silly Squirtle"
-                    width={800}
-                    height={500}
                   />
                   <span className="poke-number"> #0007</span>
                   <h2 className="poke-name">Squirtle</h2>
@@ -283,8 +268,6 @@ export default function Home() {
                     className="poke-picture"
                     src={wartortle}
                     alt="A squared up Wartortle"
-                    width={800}
-                    height={500}
                   />
                   <span className="poke-number"> #0008</span>
                   <h2 className="poke-name">Wartortle</h2>
@@ -299,8 +282,6 @@ export default function Home() {
                     className="poke-picture"
                     src={blastoise}
                     alt="A smug Blastoise"
-                    width={800}
-                    height={500}
                   />
                   <span className="poke-number"> #0009</span>
                   <h2 className="poke-name">Blastoise</h2>
@@ -315,8 +296,6 @@ export default function Home() {
                     className="poke-picture"
                     src={caterpie}
                     alt="A cute Caterpie"
-                    width={800}
-                    height={500}
                   />
                   <span className="poke-number"> #00010 </span>
                   <h2 className="poke-name">Caterpie</h2>
@@ -331,8 +310,6 @@ export default function Home() {
                     className="poke-picture"
                     src={metapod}
                     alt="A sleepy Metapod"
-                    width={800}
-                    height={500}
                   />
                   <span className="poke-number"> #0011 </span>
                   <h2 className="poke-name">Metapod</h2>
@@ -347,8 +324,6 @@ export default function Home() {
                     className="poke-picture"
                     src={butterfree}
                     alt="A curious Butterfree"
-                    width={800}
-                    height={500}
                   />
                   <span className="poke-number"> #0012 </span>
                   <h2 className="poke-name">Butterfree</h2>
