@@ -102,48 +102,49 @@ button {
   background-color: #fff;
 }
 
-.nav-list-item-red-mobile {
-  border-left: 5px solid #e3350d;
-}
-
-.nav-list-item-orange-mobile {
-  border-left: 5px solid #ee6b2f;
-}
-
-.nav-list-item-yellow-mobile {
-  border-left: 5px solid #e6bc2f;
-}
-
-.nav-list-item-green-mobile {
-  border-left: 5px solid #4dad5b;
-}
-
-.nav-list-item-light-blue-mobile {
-  border-left: 5px solid #30a7d7;
-}
-
-.nav-list-item-dark-blue-mobile {
-  border-left: 5px solid #1b53ba;
-}
-
-.nav-list-item-red-mobile,
-.nav-list-item-orange-mobile,
-.nav-list-item-yellow-mobile,
-.nav-list-item-green-mobile,
-.nav-list-item-light-blue-mobile,
-.nav-list-item-dark-blue-mobile {
+.nav-list-item {
+  border-left: 5px solid transparent;
   border-bottom: 1px solid #f3f3f3;
   padding: 10px;
 }
-.nav-list-item-red-mobile::before,
-.nav-list-item-orange-mobile::before,
-.nav-list-item-yellow-mobile::before,
-.nav-list-item-green-mobile::before,
-.nav-list-item-light-blue-mobile::before,
-.nav-list-item-dark-blue-mobile::before {
+
+.nav-list-item::before {
   color: #898989;
   padding: 20px;
   content: "?";
+}
+
+.nav-list-item.red {
+  border-color: #e3350d;
+}
+
+.nav-list-item.orange {
+  border-color: #ee6b2f;
+}
+
+.nav-list-item.yellow {
+  border-color: #e6bc2f;
+}
+
+.nav-list-item.green {
+  border-color: #4dad5b;
+}
+
+.nav-list-item.light-blue {
+  border-color: #30a7d7;
+}
+
+.nav-list-item.dark-blue {
+  border-color: #1b53ba;
+}
+
+.nav-list-item.desktop {
+  border-left: none;
+  border-bottom-width: 5px;
+}
+
+.nav-list-item.mobile {
+  border-bottom: none;
 }
 
 .pokedex-title {
