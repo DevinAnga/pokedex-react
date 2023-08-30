@@ -30,9 +30,9 @@ import butterfree from "../../public/butterfree.png";
 export default function Home() {
   return (
     <>
-      <body id="body">
-        <header className="header">
-          <div className="nav-mobile">
+      <body id="body" className="bg-white">
+        <header className="bg-white w-full lg m-auto">
+          <div className="block overflow-hidden z-10 text-grey bg-darkGrey relative text-xl lg">
             <a
               aria-label="Hamburger menu toggles menu"
               className="hamburger-icon icon"
@@ -40,12 +40,15 @@ export default function Home() {
             >
               <i className="fa fa-bars"></i>
             </a>
-            <a href="#" className="login-button">
+            <a
+              href="#"
+              className="text-white bg-darkGrey text-xs p-[15px] justify-self-end max-width-[50px] text-center"
+            >
               Log In
             </a>
-            <div id="myLinks" className="background-white">
+            <div id="myLinks" className="bg-white">
               <ul className="nav-list">
-                <li className="nav-list-item-red-mobile">
+                <li className="border-l-[5px] border-[#e3350d] px-2.5 mobile before:content-['?'] before:p-5">
                   <a
                     aria-label="Return to Pokedex page here"
                     href="./index.html"
@@ -53,87 +56,99 @@ export default function Home() {
                     Pokédex
                   </a>
                 </li>
-                <li className="nav-list-item-orange-mobile">
+                <li className="border-l-[5px] border-[#ee6b2f] px-2.5 mobile before:content-['?'] before:p-5">
                   Video Games & Apps
                 </li>
-                <li className="nav-list-item-yellow-mobile">
+                <li className="border-l-[5px] border-[#e6bc2f] px-2.5 mobile before:content-['?'] before:p-5">
                   Trading Card Game
                 </li>
-                <li className="nav-list-item-green-mobile">Pokémon TV</li>
-                <li className="nav-list-item-light-blue-mobile">
-                  Play! Pokémon Events
-                </li>
-                <li className="nav-list-item-dark-blue-mobile">News</li>
-              </ul>
-            </div>
-          </div>
-          <div className="nav-desktop">
-            <div className="background-white">
-              <ul className="nav-list-desktop">
-                <li className="nav-list-item-desktop nav-list-item-red-desktop">
-                  <a
-                    aria-label="Return to Pokedex page here"
-                    href="./index.html"
-                  >
-                    Pokédex
-                  </a>
-                </li>
-                <li className="nav-list-item-desktop nav-list-item-orange-desktop">
-                  Video Games & Apps
-                </li>
-                <li className="nav-list-item-desktop nav-list-item-yellow-desktop">
-                  Trading Card Game
-                </li>
-                <li className="nav-list-item-desktop nav-list-item-green-desktop">
+                <li className="border-l-[5px] border-[#4dad5b] px-2.5 mobile before:content-['?'] before:p-5">
                   Pokémon TV
                 </li>
-                <li className="nav-list-item-desktop nav-list-item-light-blue-desktop">
+                <li className="border-l-[5px] border-[#30a7d7] px-2.5 mobile before:content-['?'] before:p-5">
                   Play! Pokémon Events
                 </li>
-                <li className="nav-list-item-desktop nav-list-item-dark-blue-desktop">
+                <li className="border-l-[5px] border-[#1b53ba] px-2.5 mobile before:content-['?'] before:p-5 before:text-orange-900">
                   News
                 </li>
               </ul>
             </div>
           </div>
-          <h3 className="pokedex-title">Pokédex</h3>
+          <div className="block w-full max-w-screen-lg m-auto bg-white">
+            <div className="bg-white">
+              <ul className="nav-list-desktop grid grid-cols-6">
+                <li className="text-center text-base text-black pb-5 border-b-[5px] border-[#e3350d] mobile before:content-['?'] before:p-5">
+                  <a
+                    aria-label="Return to Pokedex page here"
+                    href="./index.html"
+                  >
+                    Pokédex
+                  </a>
+                </li>
+                <li className="text-center text-base text-black pb-5 border-b-[5px] border-[#ee6b2f] mobile before:content-['?'] before:p-5">
+                  Video Games & Apps
+                </li>
+                <li className="text-center text-base text-black pb-5 border-b-[5px] border-[#e6bc2f] mobile before:content-['?'] before:p-5">
+                  Trading Card Game
+                </li>
+                <li className="text-center text-base text-black pb-5 border-b-[5px] border-[#4dad5b] mobile before:content-['?'] before:p-5">
+                  Pokémon TV
+                </li>
+                <li className="text-center text-base text-black pb-5 border-b-[5px] border-[#30a7d7] mobile before:content-['?'] before:p-5">
+                  Play! Pokémon Events
+                </li>
+                <li className="text-center text-base text-black pb-5 border-b-[5px] border-[#1b53ba] mobile before:content-['?'] before:p-5">
+                  News
+                </li>
+              </ul>
+            </div>
+          </div>
+          <h3 className="text-3xl m-auto pt-5 pr-0 pb-4 pl-5 text-[#919191] max-w-screen-lg">
+            Pokédex
+          </h3>
         </header>
-        <section id="search-header" className="search-header">
-          <div className="section">
-            <div className="header-content">
+        <section
+          id="search-header"
+          className="py-8 px-4 bg-darkGrey max-w-screen-lg m-auto"
+        >
+          <div className="py-0 px-6 w-full max-w-screen-lg m-auto">
+            <div className="grid grid-cols-2 gap-16">
               <div>
-                <div className="search-container">
-                  <form className="header-search-form">
+                <div className="w-full">
+                  <form className="mb-4 grid grid-cols-1">
                     <div>
-                      <label className="header-label" htmlFor="search">
+                      <label
+                        className="text-white text-[1.625rem] pb-2.5"
+                        htmlFor="search"
+                      >
                         Name or Number
                       </label>
                     </div>
-                    <div className="search-end">
+                    <div className="grid grid-flow-col auto-cols-max">
                       <input
                         id="search"
-                        className="search-bar"
+                        className="border-solid rounded-md border-[#616161] border-2 h-12"
                         type="text"
                         placeholder=""
                         name="search"
                       />
                       <button
                         type="submit"
-                        className="search-button"
+                        className="bg-[#de662f] text-white h-12 w-16 rounded-md text-lg ml-5"
                         aria-label="Click to search Pokedex using input text"
                       >
                         <i className="fa fa-search"></i>
                       </button>
                     </div>
                   </form>
-                  <span className="search-subtext">
+                  <span className="text-white text-lg">
                     Use the Advanced Search to explore Pokémon by type,
                     weakness, Ability, and more!
                   </span>
                 </div>
               </div>
-              <div>
-                <span className="search-text">
+              <div className="bg-[#4dad5b] rounded-md p-6">
+                <span className="text-lg self-start">
                   Search for a Pokémon by name or using its National Pokémon
                   number.
                 </span>
@@ -141,16 +156,16 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <main id="main" className="main">
-          <div className="main-content">
-            <div className="section">
-              <div className="drop-down-wrapper">
-                <label className="drop-down-text" htmlFor="poke-search">
+        <main id="main" className="bg-[#f3f3f3]">
+          <div className="pt-10 bg-white max-w-screen-lg w-full m-auto">
+            <div className="max-w-screen-lg w-full py-0 px-6 m-auto">
+              <div className="grid grid-cols-1 gap-4 justify-center items-center max-w-[400px] mt-0 mx-auto mb-10 md:grid-cols-2 md:auto-cols-max md:w-[300px] md:justify-end">
+                <label className="text-[#a4a4a4] text-xl" htmlFor="poke-search">
                   Sort By
                   <br />
                 </label>
                 <select
-                  className="sort-select"
+                  className="bg-[#313131] py-0 px-4 text-white text-base h-12 w-full rounded-md"
                   name="poke-search"
                   id="poke-search"
                 >
@@ -160,183 +175,244 @@ export default function Home() {
                   <option value="Z-A">Z-A</option>
                 </select>
               </div>
-              <div className="poke-wrapper">
+              <div className="grid gap-y-50 gap-x-15 md:grid-cols-2 lg:grid-cols-4">
                 <div>
                   <Image
-                    className="poke-picture"
+                    className="bg-white w-full block rounded-md my-1 mx-auto"
                     src={bulbasaur}
                     alt="A happy Bulbasaur"
                   />
-                  <span className="poke-number"> #0001</span>
-                  <h2 className="poke-name">Bulbasaur</h2>
+                  <span className="text-[#919191]">#0001</span>
+                  <h2 className="mt-2 mb-1  font-bold text-[#313136]">
+                    Bulbasaur
+                  </h2>
                   <div className="type-list-grid">
-                    <ul className="type-list">
-                      <li className="type-list-item grass">Grass</li>
-                      <li className="type-list-item poison">Poison</li>
+                    <ul className="grid grid-cols-[repeat(auto-fit,_45%)]">
+                      <li className="flex justify-center items-center rounded-md text-xs h-5 w-[100px] bg-[#9bcc50] text-black">
+                        Grass
+                      </li>
+                      <li className="flex justify-center items-center rounded-md text-xs h-5 w-[100px] bg-[#b97fc9]">
+                        Poison
+                      </li>
                     </ul>
                   </div>
                 </div>
                 <div>
                   <Image
-                    className="poke-picture"
+                    className="bg-white w-full block rounded-md my-1 mx-auto"
                     src={ivysaur}
                     alt="A regal Ivysaur"
                   />
-                  <span className="poke-number"> #0002</span>
-                  <h2 className="poke-name">Ivysaur</h2>
+                  <span className="text-[#919191]">#0002</span>
+                  <h2 className="mt-2 mb-1 font-bold text-[#313136]">
+                    Ivysaur
+                  </h2>
                   <div>
-                    <ul className="type-list">
-                      <li className="type-list-item grass">Grass</li>
-                      <li className="type-list-item poison">Poison</li>
+                    <ul className="grid grid-cols-[repeat(auto-fit,_45%)]">
+                      <li className="flex justify-center items-center rounded-md text-xs h-5 w-[100px] bg-[#9bcc50] text-black">
+                        Grass
+                      </li>
+                      <li className="flex justify-center items-center rounded-md text-xs h-5 w-[100px] bg-[#b97fc9]">
+                        Poison
+                      </li>
                     </ul>
                   </div>
                 </div>
                 <div>
                   <Image
-                    className="poke-picture"
+                    className="bg-white w-full block rounded-md my-1 mx-auto"
                     src={venusaur}
                     alt="An angry Venusaur"
                   />
-                  <span className="poke-number"> #0003</span>
-                  <h2 className="poke-name">Venusaur</h2>
+                  <span className="text-[#919191]">#0003</span>
+                  <h2 className="mt-2 mb-1  font-bold text-[#313136]">
+                    Venusaur
+                  </h2>
                   <div>
-                    <ul className="type-list">
-                      <li className="type-list-item grass">Grass</li>
-                      <li className="type-list-item poison">Poison</li>
+                    <ul className="grid grid-cols-[repeat(auto-fit,_45%)]">
+                      <li className="flex justify-center items-center rounded-md text-xs h-5 w-[100px] bg-[#9bcc50] text-black">
+                        Grass
+                      </li>
+                      <li className="flex justify-center items-center rounded-md text-xs h-5 w-[100px] bg-[#b97fc9]">
+                        Poison
+                      </li>
                     </ul>
                   </div>
                 </div>
                 <div>
                   <Image
-                    className="poke-picture"
+                    className="bg-white w-full block rounded-md my-1 mx-auto"
                     src={charmander}
                     alt="A happy Charmander"
                   />
-                  <span className="poke-number"> #0004</span>
-                  <h2 className="poke-name">Charmander</h2>
+                  <span className="text-[#919191]">#0004</span>
+                  <h2 className="mt-2 mb-1  font-bold text-[#313136]">
+                    Charmander
+                  </h2>
                   <div>
-                    <ul className="type-list">
-                      <li className="type-list-item fire">Fire</li>
+                    <ul className="grid grid-cols-[repeat(auto-fit,_45%)]">
+                      <li className="flex justify-center items-center rounded-md text-xs h-5 w-[100px] bg-[#fd7d24]">
+                        Fire
+                      </li>
                     </ul>
                   </div>
                 </div>
                 <div>
                   <Image
-                    className="poke-picture"
+                    className="bg-white w-full block rounded-md my-1 mx-auto"
                     src={charmeleon}
                     alt="A regal Charmeleon"
                   />
-                  <span className="poke-number"> #0005</span>
-                  <h2 className="poke-name">Charmeleon</h2>
+                  <span className="text-[#919191]">#0005</span>
+                  <h2 className="mt-2 mb-1  font-bold text-[#313136]">
+                    Charmeleon
+                  </h2>
                   <div>
-                    <ul className="type-list">
-                      <li className="type-list-item fire">Fire</li>
+                    <ul className="grid grid-cols-[repeat(auto-fit,_45%)]">
+                      <li className="flex justify-center items-center rounded-md text-xs h-5 w-[100px] bg-[#fd7d24]">
+                        Fire
+                      </li>
                     </ul>
                   </div>
                 </div>
                 <div>
                   <Image
-                    className="poke-picture"
+                    className="bg-white w-full block rounded-md my-1 mx-auto"
                     src={charizard}
                     alt="A Regal Charizard"
                   />
-                  <span className="poke-number"> #0006</span>
-                  <h2 className="poke-name">Charizard</h2>
+                  <span className="text-[#919191]">#0006</span>
+                  <h2 className="mt-2 mb-1  font-bold text-[#313136]">
+                    Charizard
+                  </h2>
                   <div>
-                    <ul className="type-list">
-                      <li className="type-list-item fire">Fire</li>
-                      <li className="type-list-item flying">Flying</li>
+                    <ul className="grid grid-cols-[repeat(auto-fit,_45%)]">
+                      <li className="flex justify-center items-center rounded-md text-xs h-5 w-[100px] bg-[#fd7d24]">
+                        Fire
+                      </li>
+                      <li className="flex justify-center items-center rounded-md text-xs h-5 w-[100px] bg-gradient-to-b from-[#3dc7ef] from-0% via-[#3dc7ef] via-50% to-[#bdb9b8] to-50% text-black">
+                        Flying
+                      </li>
                     </ul>
                   </div>
                 </div>
                 <div>
                   <Image
-                    className="poke-picture"
+                    className="bg-white w-full block rounded-md my-1 mx-auto"
                     src={squirtle}
                     alt="A silly Squirtle"
                   />
-                  <span className="poke-number"> #0007</span>
-                  <h2 className="poke-name">Squirtle</h2>
+                  <span className="text-[#919191]">#0007</span>
+                  <h2 className="mt-2 mb-1  font-bold text-[#313136]">
+                    Squirtle
+                  </h2>
                   <div>
-                    <ul className="type-list">
-                      <li className="type-list-item water">Water</li>
+                    <ul className="grid grid-cols-[repeat(auto-fit,_45%)]">
+                      <li className="flex justify-center items-center rounded-md text-xs h-5 w-[100px] bg-[#4592c4] text-[white]">
+                        Water
+                      </li>
                     </ul>
                   </div>
                 </div>
                 <div>
                   <Image
-                    className="poke-picture"
+                    className="bg-white w-full block rounded-md my-1 mx-auto"
                     src={wartortle}
                     alt="A squared up Wartortle"
                   />
-                  <span className="poke-number"> #0008</span>
-                  <h2 className="poke-name">Wartortle</h2>
+                  <span className="text-[#919191]">#0008</span>
+                  <h2 className="mt-2 mb-1  font-bold text-[#313136]">
+                    Wartortle
+                  </h2>
                   <div>
-                    <ul className="type-list">
-                      <li className="type-list-item water">Water</li>
+                    <ul className="grid grid-cols-[repeat(auto-fit,_45%)]">
+                      <li className="flex justify-center items-center rounded-md text-xs h-5 w-[100px] bg-[#4592c4] text-[white]">
+                        Water
+                      </li>
                     </ul>
                   </div>
                 </div>
                 <div>
                   <Image
-                    className="poke-picture"
+                    className="bg-white w-full block rounded-md my-1 mx-auto"
                     src={blastoise}
                     alt="A smug Blastoise"
                   />
-                  <span className="poke-number"> #0009</span>
-                  <h2 className="poke-name">Blastoise</h2>
+                  <span className="text-[#919191]">#0009</span>
+                  <h2 className="mt-2 mb-1  font-bold text-[#313136]">
+                    Blastoise
+                  </h2>
                   <div>
-                    <ul className="type-list">
-                      <li className="type-list-item water">Water</li>
+                    <ul className="grid grid-cols-[repeat(auto-fit,_45%)]">
+                      <li className="flex justify-center items-center rounded-md text-xs h-5 w-[100px] bg-[#4592c4] text-[white]">
+                        Water
+                      </li>
                     </ul>
                   </div>
                 </div>
                 <div>
                   <Image
-                    className="poke-picture"
+                    className="bg-white w-full block rounded-md my-1 mx-auto"
                     src={caterpie}
                     alt="A cute Caterpie"
                   />
-                  <span className="poke-number"> #00010 </span>
-                  <h2 className="poke-name">Caterpie</h2>
+                  <span className="text-[#919191]">#00010</span>
+                  <h2 className="mt-2 mb-1  font-bold text-[#313136]">
+                    Caterpie
+                  </h2>
                   <div>
-                    <ul className="type-list">
-                      <li className="type-list-item bug">Bug</li>
+                    <ul className="grid grid-cols-[repeat(auto-fit,_45%)]">
+                      <li className="flex justify-center items-center rounded-md text-xs h-5 w-[100px] bg-[#729f3f]">
+                        Bug
+                      </li>
                     </ul>
                   </div>
                 </div>
                 <div>
                   <Image
-                    className="poke-picture"
+                    className="bg-white w-full block rounded-md my-1 mx-auto"
                     src={metapod}
                     alt="A sleepy Metapod"
                   />
-                  <span className="poke-number"> #0011 </span>
-                  <h2 className="poke-name">Metapod</h2>
+                  <span className="text-[#919191]">#0011</span>
+                  <h2 className="mt-2 mb-1  font-bold text-[#313136]">
+                    Metapod
+                  </h2>
                   <div>
-                    <ul className="type-list">
-                      <li className="type-list-item bug">Bug</li>
+                    <ul className="grid grid-cols-[repeat(auto-fit,_45%)]">
+                      <li className="flex justify-center items-center rounded-md text-xs h-5 w-[100px] bg-[#729f3f]">
+                        Bug
+                      </li>
                     </ul>
                   </div>
                 </div>
                 <div>
                   <Image
-                    className="poke-picture"
+                    className="bg-white w-full block rounded-md my-1 mx-auto"
                     src={butterfree}
                     alt="A curious Butterfree"
                   />
-                  <span className="poke-number"> #0012 </span>
-                  <h2 className="poke-name">Butterfree</h2>
+                  <span className="text-[#919191]">#0012</span>
+                  <h2 className="mt-2 mb-1  font-bold text-[#313136]">
+                    Butterfree
+                  </h2>
                   <div>
-                    <ul className="type-list">
-                      <li className="type-list-item bug">Bug</li>
-                      <li className="type-list-item flying">Flying</li>
+                    <ul className="grid grid-cols-[repeat(auto-fit,_45%)]">
+                      <li className="flex justify-center items-center rounded-md text-xs h-5 w-[100px] bg-[#729f3f]">
+                        Bug
+                      </li>
+                      <li className="flex justify-center items-center rounded-md text-xs h-5 w-[100px] flex justify-center items-center rounded-md text-xs h-5 w-[100px] bg-gradient-to-b from-[#3dc7ef] from-0% via-[#3dc7ef] via-50% to-[#bdb9b8] to-50% text-black">
+                        Flying
+                      </li>
                     </ul>
                   </div>
                 </div>
               </div>
-              <div className="more-pokemon-button-wrapper">
-                <button className="more-pokemon-button" type="button">
+              <div className="max-w-[80%] mt-2 mr-auto mb-auto ml-auto">
+                <button
+                  className="bg-[#30a7d7] text-white max-w-full block rounded-md my-12 mx-auto p-2"
+                  type="button"
+                >
                   Load more Pokémon
                 </button>
               </div>
