@@ -1,4 +1,3 @@
-"use client";
 import Link from "next/link";
 import Image from "next/image";
 import bulbasaur from "../../public/bulbasaur.png";
@@ -34,8 +33,8 @@ export default function Home() {
   return (
     <>
       <Link href="/bulbasaur">this page!</Link>
-      <header className="bg-white w-full lg m-auto">
-        <div className="block overflow-hidden z-10 text-grey bg-darkGrey relative text-xl lg">
+      <header className="bg-white w-full m-auto">
+        <div className="block overflow-hidden z-10 text-grey bg-darkGrey relative text-xl">
           <a
             aria-label="Hamburger menu toggles menu"
             className="hamburger-icon icon"
@@ -49,7 +48,7 @@ export default function Home() {
           >
             Log In
           </a>
-          <div id="myLinks" className="bg-white">
+          <div className="bg-white">
             <ul className="nav-list">
               <li className="border-l-[5px] border-[#e3350d] px-2.5 mobile before:content-['?'] before:p-5">
                 <a aria-label="Return to Pokedex page here" href="./index.html">
@@ -57,19 +56,29 @@ export default function Home() {
                 </a>
               </li>
               <li className="border-l-[5px] border-[#ee6b2f] px-2.5 mobile before:content-['?'] before:p-5">
-                Video Games & Apps
+                <a aria-label="Go to Games & Apps page" href="#">
+                  Video Games & Apps
+                </a>
               </li>
               <li className="border-l-[5px] border-[#e6bc2f] px-2.5 mobile before:content-['?'] before:p-5">
-                Trading Card Game
+                <a aria-label="Go to CCG page" href="#">
+                  Trading Card Game
+                </a>
               </li>
               <li className="border-l-[5px] border-[#4dad5b] px-2.5 mobile before:content-['?'] before:p-5">
-                Pokémon TV
+                <a aria-label="Go to TV shows page" href="#">
+                  Pokémon TV
+                </a>
               </li>
               <li className="border-l-[5px] border-[#30a7d7] px-2.5 mobile before:content-['?'] before:p-5">
-                Play! Pokémon Events
+                <a aria-label="Go to Events page" href="#">
+                  Play! Pokémon Events
+                </a>
               </li>
               <li className="border-l-[5px] border-[#1b53ba] px-2.5 mobile before:content-['?'] before:p-5 before:text-orange-900">
-                News
+                <a aria-label="Go to News page" href="#">
+                  News
+                </a>
               </li>
             </ul>
           </div>
@@ -82,19 +91,29 @@ export default function Home() {
               </a>
             </li>
             <li className="text-center text-base text-black pb-5 border-b-[5px] border-[#ee6b2f] mobile before:content-['?'] before:p-5">
-              Video Games & Apps
+              <a aria-label="Go to Games & Apps page" href="#">
+                Video Games & Apps
+              </a>
             </li>
             <li className="text-center text-base text-black pb-5 border-b-[5px] border-[#e6bc2f] mobile before:content-['?'] before:p-5">
-              Trading Card Game
+              <a aria-label="Go to CCG page" href="#">
+                Trading Card Game
+              </a>
             </li>
             <li className="text-center text-base text-black pb-5 border-b-[5px] border-[#4dad5b] mobile before:content-['?'] before:p-5">
-              Pokémon TV
+              <a aria-label="Go to TV shows page" href="#">
+                Pokémon TV
+              </a>
             </li>
             <li className="text-center text-base text-black pb-5 border-b-[5px] border-[#30a7d7] mobile before:content-['?'] before:p-5">
-              Play! Pokémon Events
+              <a aria-label="Go to Events page" href="#">
+                Play! Pokémon Events
+              </a>
             </li>
             <li className="text-center text-base text-black pb-5 border-b-[5px] border-[#1b53ba] mobile before:content-['?'] before:p-5">
-              News
+              <a aria-label="Go to News page" href="#">
+                News
+              </a>
             </li>
           </ul>
         </div>
@@ -102,10 +121,7 @@ export default function Home() {
           Pokédex
         </h3>
       </header>
-      <section
-        id="search-header"
-        className="py-8 px-4 bg-darkGrey max-w-screen-lg m-auto"
-      >
+      <section className="py-8 px-4 bg-darkGrey max-w-screen-lg m-auto">
         <div className="py-0 px-6 w-full max-w-screen-lg m-auto">
           <div className="grid grid-cols-2 gap-16">
             <div>
@@ -121,7 +137,6 @@ export default function Home() {
                   </div>
                   <div className="grid grid-flow-col auto-cols-max">
                     <input
-                      id="search"
                       className="border-solid rounded-md border-[#616161] border-2 h-12"
                       type="text"
                       placeholder=""
@@ -151,17 +166,16 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <main id="main" className="bg-[#f3f3f3]">
+      <main className="bg-[#f3f3f3]">
         <div className="pt-10 bg-white max-w-screen-lg w-full m-auto">
-          <div className="max-w-screen-lg w-full py-0 px-6 m-auto">
+          <div className="max-w-screen-lg w-full px-6 m-auto">
             <div className="grid grid-cols-1 gap-4 justify-center items-center max-w-[400px] mt-0 mx-auto mb-10 md:grid-cols-2 md:auto-cols-max md:w-[300px] md:justify-end">
               <label className="text-[#a4a4a4] text-xl" htmlFor="poke-search">
                 Sort By
               </label>
               <select
-                className="bg-[#313131] py-0 px-4 text-white text-base h-12 w-full rounded-md"
+                className="bg-[#313131] px-4 text-white text-base h-12 w-full rounded-md"
                 name="poke-search"
-                id="poke-search"
               >
                 <option value="lowest-number">Lowest Number (First)</option>
                 <option value="highest-number">Highest Number (First)</option>
@@ -173,227 +187,23 @@ export default function Home() {
               <PokemonCard
                 name="Bulbasaur"
                 imgSrc={bulbasaur}
-                types={["grass", "poison"]}
+                types={["Grass", "Poison"]}
               />
               <PokemonCard
                 name="Ivysaur"
-                imgSrc={bulbasaur}
-                types={["grass", "poison"]}
+                imgSrc={ivysaur}
+                types={["Grass", "Poison"]}
               />
               <PokemonCard
                 name="Venusaur"
-                imgSrc={bulbasaur}
-                types={["grass", "poison"]}
+                imgSrc={venusaur}
+                types={["Grass", "Poison"]}
               />
               <PokemonCard
                 name="Charmander"
-                imgSrc={bulbasaur}
-                types={["grass", "poison"]}
+                imgSrc={charmander}
+                types={["Fire"]}
               />
-              <div>
-                <Image
-                  className="bg-white w-full block rounded-md my-1 mx-auto"
-                  src={ivysaur}
-                  alt="A regal Ivysaur"
-                />
-                <span className="text-[#919191]">#0002</span>
-                <h2 className="mt-2 mb-1 font-bold text-[#313136]">Ivysaur</h2>
-                <div>
-                  <ul className="grid grid-cols-[repeat(auto-fit,_45%)]">
-                    <li className="flex justify-center items-center rounded-md text-xs h-5 w-[100px] bg-[#9bcc50] text-black">
-                      Grass
-                    </li>
-                    <li className="flex justify-center items-center rounded-md text-xs h-5 w-[100px] bg-[#b97fc9]">
-                      Poison
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div>
-                <Image
-                  className="bg-white w-full block rounded-md my-1 mx-auto"
-                  src={venusaur}
-                  alt="An angry Venusaur"
-                />
-                <span className="text-[#919191]">#0003</span>
-                <h2 className="mt-2 mb-1 font-bold text-[#313136]">Venusaur</h2>
-                <div>
-                  <ul className="grid grid-cols-[repeat(auto-fit,_45%)]">
-                    <li className="flex justify-center items-center rounded-md text-xs h-5 w-[100px] bg-[#9bcc50] text-black">
-                      Grass
-                    </li>
-                    <li className="flex justify-center items-center rounded-md text-xs h-5 w-[100px] bg-[#b97fc9]">
-                      Poison
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div>
-                <Image
-                  className="bg-white w-full block rounded-md my-1 mx-auto"
-                  src={charmander}
-                  alt="A happy Charmander"
-                />
-                <span className="text-[#919191]">#0004</span>
-                <h2 className="mt-2 mb-1  font-bold text-[#313136]">
-                  Charmander
-                </h2>
-                <div>
-                  <ul className="grid grid-cols-[repeat(auto-fit,_45%)]">
-                    <li className="flex justify-center items-center rounded-md text-xs h-5 w-[100px] bg-[#fd7d24]">
-                      Fire
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div>
-                <Image
-                  className="bg-white w-full block rounded-md my-1 mx-auto"
-                  src={charmeleon}
-                  alt="A regal Charmeleon"
-                />
-                <span className="text-[#919191]">#0005</span>
-                <h2 className="mt-2 mb-1  font-bold text-[#313136]">
-                  Charmeleon
-                </h2>
-                <div>
-                  <ul className="grid grid-cols-[repeat(auto-fit,_45%)]">
-                    <li className="flex justify-center items-center rounded-md text-xs h-5 w-[100px] bg-[#fd7d24]">
-                      Fire
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div>
-                <Image
-                  className="bg-white w-full block rounded-md my-1 mx-auto"
-                  src={charizard}
-                  alt="A Regal Charizard"
-                />
-                <span className="text-[#919191]">#0006</span>
-                <h2 className="mt-2 mb-1  font-bold text-[#313136]">
-                  Charizard
-                </h2>
-                <div>
-                  <ul className="grid grid-cols-[repeat(auto-fit,_45%)]">
-                    <li className="flex justify-center items-center rounded-md text-xs h-5 w-[100px] bg-[#fd7d24]">
-                      Fire
-                    </li>
-                    <li className="flex justify-center items-center rounded-md text-xs h-5 w-[100px] bg-gradient-to-b from-[#3dc7ef] from-0% via-[#3dc7ef] via-50% to-[#bdb9b8] to-50% text-black">
-                      Flying
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div>
-                <Image
-                  className="bg-white w-full block rounded-md my-1 mx-auto"
-                  src={squirtle}
-                  alt="A silly Squirtle"
-                />
-                <span className="text-[#919191]">#0007</span>
-                <h2 className="mt-2 mb-1  font-bold text-[#313136]">
-                  Squirtle
-                </h2>
-                <div>
-                  <ul className="grid grid-cols-[repeat(auto-fit,_45%)]">
-                    <li className="flex justify-center items-center rounded-md text-xs h-5 w-[100px] bg-[#4592c4] text-[white]">
-                      Water
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div>
-                <Image
-                  className="bg-white w-full block rounded-md my-1 mx-auto"
-                  src={wartortle}
-                  alt="A squared up Wartortle"
-                />
-                <span className="text-[#919191]">#0008</span>
-                <h2 className="mt-2 mb-1  font-bold text-[#313136]">
-                  Wartortle
-                </h2>
-                <div>
-                  <ul className="grid grid-cols-[repeat(auto-fit,_45%)]">
-                    <li className="flex justify-center items-center rounded-md text-xs h-5 w-[100px] bg-[#4592c4] text-[white]">
-                      Water
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div>
-                <Image
-                  className="bg-white w-full block rounded-md my-1 mx-auto"
-                  src={blastoise}
-                  alt="A smug Blastoise"
-                />
-                <span className="text-[#919191]">#0009</span>
-                <h2 className="mt-2 mb-1  font-bold text-[#313136]">
-                  Blastoise
-                </h2>
-                <div>
-                  <ul className="grid grid-cols-[repeat(auto-fit,_45%)]">
-                    <li className="flex justify-center items-center rounded-md text-xs h-5 w-[100px] bg-[#4592c4] text-[white]">
-                      Water
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div>
-                <Image
-                  className="bg-white w-full block rounded-md my-1 mx-auto"
-                  src={caterpie}
-                  alt="A cute Caterpie"
-                />
-                <span className="text-[#919191]">#00010</span>
-                <h2 className="mt-2 mb-1  font-bold text-[#313136]">
-                  Caterpie
-                </h2>
-                <div>
-                  <ul className="grid grid-cols-[repeat(auto-fit,_45%)]">
-                    <li className="flex justify-center items-center rounded-md text-xs h-5 w-[100px] bg-[#729f3f]">
-                      Bug
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div>
-                <Image
-                  className="bg-white w-full block rounded-md my-1 mx-auto"
-                  src={metapod}
-                  alt="A sleepy Metapod"
-                />
-                <span className="text-[#919191]">#0011</span>
-                <h2 className="mt-2 mb-1  font-bold text-[#313136]">Metapod</h2>
-                <div>
-                  <ul className="grid grid-cols-[repeat(auto-fit,_45%)]">
-                    <li className="flex justify-center items-center rounded-md text-xs h-5 w-[100px] bg-[#729f3f]">
-                      Bug
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div>
-                <Image
-                  className="bg-white w-full block rounded-md my-1 mx-auto"
-                  src={butterfree}
-                  alt="A curious Butterfree"
-                />
-                <span className="text-[#919191]">#0012</span>
-                <h2 className="mt-2 mb-1  font-bold text-[#313136]">
-                  Butterfree
-                </h2>
-                <div>
-                  <ul className="grid grid-cols-[repeat(auto-fit,_45%)]">
-                    <li className="flex justify-center items-center rounded-md text-xs h-5 w-[100px] bg-[#729f3f]">
-                      Bug
-                    </li>
-                    <li className="flex justify-center items-center rounded-md text-xs h-5 w-[100px] flex justify-center items-center rounded-md text-xs h-5 w-[100px] bg-gradient-to-b from-[#3dc7ef] from-0% via-[#3dc7ef] via-50% to-[#bdb9b8] to-50% text-black">
-                      Flying
-                    </li>
-                  </ul>
-                </div>
-              </div>
             </div>
             <div className="mt-2 mb-auto mx-auto">
               <button
