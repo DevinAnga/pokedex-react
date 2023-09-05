@@ -12,6 +12,7 @@ import blastoise from "../../public/blastoise.png";
 import caterpie from "../../public/caterpie.png";
 import metapod from "../../public/metapod.png";
 import butterfree from "../../public/butterfree.png";
+import PokemonCard from "./pokemon/pokemonCard/PokemonCard";
 // function toggleMenu() {
 //   const myLinks = document.getElementById("myLinks");
 //   const navOverlay = document.getElementsByClassName("navigation-overlay")[0];
@@ -73,30 +74,28 @@ export default function Home() {
           </div>
         </div>
         <div className="block w-full max-w-screen-lg m-auto bg-white">
-          <div className="bg-white">
-            <ul className="nav-list-desktop grid grid-cols-6">
-              <li className="text-center text-base text-black pb-5 border-b-[5px] border-[#e3350d] mobile before:content-['?'] before:p-5">
-                <a aria-label="Return to Pokedex page here" href="./index.html">
-                  Pokédex
-                </a>
-              </li>
-              <li className="text-center text-base text-black pb-5 border-b-[5px] border-[#ee6b2f] mobile before:content-['?'] before:p-5">
-                Video Games & Apps
-              </li>
-              <li className="text-center text-base text-black pb-5 border-b-[5px] border-[#e6bc2f] mobile before:content-['?'] before:p-5">
-                Trading Card Game
-              </li>
-              <li className="text-center text-base text-black pb-5 border-b-[5px] border-[#4dad5b] mobile before:content-['?'] before:p-5">
-                Pokémon TV
-              </li>
-              <li className="text-center text-base text-black pb-5 border-b-[5px] border-[#30a7d7] mobile before:content-['?'] before:p-5">
-                Play! Pokémon Events
-              </li>
-              <li className="text-center text-base text-black pb-5 border-b-[5px] border-[#1b53ba] mobile before:content-['?'] before:p-5">
-                News
-              </li>
-            </ul>
-          </div>
+          <ul className="nav-list-desktop grid grid-cols-6">
+            <li className="text-center text-base text-black pb-5 border-b-[5px] border-[#e3350d] mobile before:content-['?'] before:p-5">
+              <a aria-label="Return to Pokedex page here" href="./index.html">
+                Pokédex
+              </a>
+            </li>
+            <li className="text-center text-base text-black pb-5 border-b-[5px] border-[#ee6b2f] mobile before:content-['?'] before:p-5">
+              Video Games & Apps
+            </li>
+            <li className="text-center text-base text-black pb-5 border-b-[5px] border-[#e6bc2f] mobile before:content-['?'] before:p-5">
+              Trading Card Game
+            </li>
+            <li className="text-center text-base text-black pb-5 border-b-[5px] border-[#4dad5b] mobile before:content-['?'] before:p-5">
+              Pokémon TV
+            </li>
+            <li className="text-center text-base text-black pb-5 border-b-[5px] border-[#30a7d7] mobile before:content-['?'] before:p-5">
+              Play! Pokémon Events
+            </li>
+            <li className="text-center text-base text-black pb-5 border-b-[5px] border-[#1b53ba] mobile before:content-['?'] before:p-5">
+              News
+            </li>
+          </ul>
         </div>
         <h3 className="text-3xl m-auto pt-5 pr-0 pb-4 pl-5 text-[#919191] max-w-screen-lg">
           Pokédex
@@ -157,7 +156,6 @@ export default function Home() {
             <div className="grid grid-cols-1 gap-4 justify-center items-center max-w-[400px] mt-0 mx-auto mb-10 md:grid-cols-2 md:auto-cols-max md:w-[300px] md:justify-end">
               <label className="text-[#a4a4a4] text-xl" htmlFor="poke-search">
                 Sort By
-                <br />
               </label>
               <select
                 className="bg-[#313131] py-0 px-4 text-white text-base h-12 w-full rounded-md"
@@ -170,28 +168,27 @@ export default function Home() {
                 <option value="Z-A">Z-A</option>
               </select>
             </div>
-            <div className="grid gap-y-50 gap-x-15 md:grid-cols-2 lg:grid-cols-4">
-              <div>
-                <Image
-                  className="bg-white w-full block rounded-md my-1 mx-auto"
-                  src={bulbasaur}
-                  alt="A happy Bulbasaur"
-                />
-                <span className="text-[#919191]">#0001</span>
-                <h2 className="mt-2 mb-1  font-bold text-[#313136]">
-                  Bulbasaur
-                </h2>
-                <div className="type-list-grid">
-                  <ul className="grid grid-cols-[repeat(auto-fit,_45%)]">
-                    <li className="flex justify-center items-center rounded-md text-xs h-5 w-[100px] bg-[#9bcc50] text-black">
-                      Grass
-                    </li>
-                    <li className="flex justify-center items-center rounded-md text-xs h-5 w-[100px] bg-[#b97fc9]">
-                      Poison
-                    </li>
-                  </ul>
-                </div>
-              </div>
+            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+              <PokemonCard
+                name="Bulbasaur"
+                imgSrc={bulbasaur}
+                types={["grass", "poison"]}
+              />
+              <PokemonCard
+                name="Ivysaur"
+                imgSrc={bulbasaur}
+                types={["grass", "poison"]}
+              />
+              <PokemonCard
+                name="Venusaur"
+                imgSrc={bulbasaur}
+                types={["grass", "poison"]}
+              />
+              <PokemonCard
+                name="Charmander"
+                imgSrc={bulbasaur}
+                types={["grass", "poison"]}
+              />
               <div>
                 <Image
                   className="bg-white w-full block rounded-md my-1 mx-auto"
@@ -218,9 +215,7 @@ export default function Home() {
                   alt="An angry Venusaur"
                 />
                 <span className="text-[#919191]">#0003</span>
-                <h2 className="mt-2 mb-1  font-bold text-[#313136]">
-                  Venusaur
-                </h2>
+                <h2 className="mt-2 mb-1 font-bold text-[#313136]">Venusaur</h2>
                 <div>
                   <ul className="grid grid-cols-[repeat(auto-fit,_45%)]">
                     <li className="flex justify-center items-center rounded-md text-xs h-5 w-[100px] bg-[#9bcc50] text-black">
@@ -399,7 +394,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="max-w-[80%] mt-2 mr-auto mb-auto ml-auto">
+            <div className="mt-2 mb-auto mx-auto">
               <button
                 className="bg-[#30a7d7] text-white max-w-full block rounded-md my-12 mx-auto p-2"
                 type="button"
