@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import Image, { StaticImageData } from "next/image";
 
@@ -16,7 +18,7 @@ export default function PokemonCard({ name, imgSrc, types }: PokemonCardProps) {
   return (
     <div>
       <Image
-        className="bg-white w-full block rounded-md my-1 mx-auto"
+        className="bg-[#f2f2f2] w-full block rounded-md my-1 mx-auto"
         src={imgSrc}
         alt="A happy Bulbasaur"
       />
@@ -25,13 +27,13 @@ export default function PokemonCard({ name, imgSrc, types }: PokemonCardProps) {
         <h1>THIS IS A SECRET H1 ONLY REVEALED BY TOGGLING THE MENU</h1>
       )}
       <h2
-        className="mt-2 mb-1 font-bold text-[#313136]"
+        className="mt-2 mb-1 font-bold text-[#313136] text-base md:text-2xl"
         onClick={() => setToggleMenu(!toggleMenu)}
       >
         {name}
       </h2>
-      <div className="type-list-grid">
-        <ul className="grid grid-cols-[repeat(auto-fit,_45%)]">
+      <div>
+        <ul className="flex gap-x-1 mb-4">
           {types.map((type) => (
             <PokemonType key={type} name={type} />
           ))}

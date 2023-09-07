@@ -33,100 +33,12 @@ export default function Home() {
   return (
     <>
       <Link href="/bulbasaur">this page!</Link>
-      <header className="bg-white w-full m-auto">
-        <div className="block overflow-hidden z-10 text-grey bg-darkGrey relative text-xl">
-          <a
-            aria-label="Hamburger menu toggles menu"
-            className="hamburger-icon icon"
-            // onClick={toggleMenu}
-          >
-            <i className="fa fa-bars"></i>
-          </a>
-          <a
-            href="#"
-            className="text-white bg-darkGrey text-xs p-[15px] justify-self-end max-width-[50px] text-center"
-          >
-            Log In
-          </a>
-          <div className="bg-white">
-            <ul className="nav-list">
-              <li className="border-l-[5px] border-[#e3350d] px-2.5 mobile before:content-['?'] before:p-5">
-                <a aria-label="Return to Pokedex page here" href="./index.html">
-                  Pokédex
-                </a>
-              </li>
-              <li className="border-l-[5px] border-[#ee6b2f] px-2.5 mobile before:content-['?'] before:p-5">
-                <a aria-label="Go to Games & Apps page" href="#">
-                  Video Games & Apps
-                </a>
-              </li>
-              <li className="border-l-[5px] border-[#e6bc2f] px-2.5 mobile before:content-['?'] before:p-5">
-                <a aria-label="Go to CCG page" href="#">
-                  Trading Card Game
-                </a>
-              </li>
-              <li className="border-l-[5px] border-[#4dad5b] px-2.5 mobile before:content-['?'] before:p-5">
-                <a aria-label="Go to TV shows page" href="#">
-                  Pokémon TV
-                </a>
-              </li>
-              <li className="border-l-[5px] border-[#30a7d7] px-2.5 mobile before:content-['?'] before:p-5">
-                <a aria-label="Go to Events page" href="#">
-                  Play! Pokémon Events
-                </a>
-              </li>
-              <li className="border-l-[5px] border-[#1b53ba] px-2.5 mobile before:content-['?'] before:p-5 before:text-orange-900">
-                <a aria-label="Go to News page" href="#">
-                  News
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="block w-full max-w-screen-lg m-auto bg-white">
-          <ul className="nav-list-desktop grid grid-cols-6">
-            <li className="text-center text-base text-black pb-5 border-b-[5px] border-[#e3350d] mobile before:content-['?'] before:p-5">
-              <a aria-label="Return to Pokedex page here" href="./index.html">
-                Pokédex
-              </a>
-            </li>
-            <li className="text-center text-base text-black pb-5 border-b-[5px] border-[#ee6b2f] mobile before:content-['?'] before:p-5">
-              <a aria-label="Go to Games & Apps page" href="#">
-                Video Games & Apps
-              </a>
-            </li>
-            <li className="text-center text-base text-black pb-5 border-b-[5px] border-[#e6bc2f] mobile before:content-['?'] before:p-5">
-              <a aria-label="Go to CCG page" href="#">
-                Trading Card Game
-              </a>
-            </li>
-            <li className="text-center text-base text-black pb-5 border-b-[5px] border-[#4dad5b] mobile before:content-['?'] before:p-5">
-              <a aria-label="Go to TV shows page" href="#">
-                Pokémon TV
-              </a>
-            </li>
-            <li className="text-center text-base text-black pb-5 border-b-[5px] border-[#30a7d7] mobile before:content-['?'] before:p-5">
-              <a aria-label="Go to Events page" href="#">
-                Play! Pokémon Events
-              </a>
-            </li>
-            <li className="text-center text-base text-black pb-5 border-b-[5px] border-[#1b53ba] mobile before:content-['?'] before:p-5">
-              <a aria-label="Go to News page" href="#">
-                News
-              </a>
-            </li>
-          </ul>
-        </div>
-        <h3 className="text-3xl m-auto pt-5 pr-0 pb-4 pl-5 text-[#919191] max-w-screen-lg">
-          Pokédex
-        </h3>
-      </header>
-      <section className="py-8 px-4 bg-darkGrey max-w-screen-lg m-auto">
+      <section className="pt-8 pb-2 px-4 bg-darkGrey max-w-screen-lg m-auto">
         <div className="py-0 px-6 w-full max-w-screen-lg m-auto">
-          <div className="grid grid-cols-2 gap-16">
+          <div className="lg:grid lg:grid-cols-2 lg:gap-16">
             <div>
               <div className="w-full">
-                <form className="mb-4 grid grid-cols-1">
+                <form className="mb-4">
                   <div>
                     <label
                       className="text-white text-[1.625rem] pb-2.5"
@@ -135,9 +47,9 @@ export default function Home() {
                       Name or Number
                     </label>
                   </div>
-                  <div className="grid grid-flow-col auto-cols-max">
+                  <div className="grid grid-flow-col my-4">
                     <input
-                      className="border-solid rounded-md border-[#616161] border-2 h-12"
+                      className="border-solid rounded-md border-[#616161] border-2 h-12 max-w-full"
                       type="text"
                       placeholder=""
                       name="search"
@@ -151,14 +63,14 @@ export default function Home() {
                     </button>
                   </div>
                 </form>
-                <span className="text-white text-lg">
+                <span className="text-white text-sm font-semibold">
                   Use the Advanced Search to explore Pokémon by type, weakness,
                   Ability, and more!
                 </span>
               </div>
             </div>
-            <div className="bg-[#4dad5b] rounded-md p-6">
-              <span className="text-lg self-start">
+            <div className="bg-[#4dad5b] rounded-md p-4 mt-12">
+              <span className="text-xl text-white self-start font-semibold">
                 Search for a Pokémon by name or using its National Pokémon
                 number.
               </span>
@@ -169,8 +81,11 @@ export default function Home() {
       <main className="bg-[#f3f3f3]">
         <div className="pt-10 bg-white max-w-screen-lg w-full m-auto">
           <div className="max-w-screen-lg w-full px-6 m-auto">
-            <div className="grid grid-cols-1 gap-4 justify-center items-center max-w-[400px] mt-0 mx-auto mb-10 md:grid-cols-2 md:auto-cols-max md:w-[300px] md:justify-end">
-              <label className="text-[#a4a4a4] text-xl" htmlFor="poke-search">
+            <div className="justify-center items-center max-w-[80%] mt-0 mx-auto mb-10 lg:inline-flex">
+              <label
+                className="text-[#a4a4a4] text-2xl mb-1 whitespace-nowrap mr-4 lg:justify-items-end"
+                htmlFor="poke-search"
+              >
                 Sort By
               </label>
               <select
@@ -183,7 +98,7 @@ export default function Home() {
                 <option value="Z-A">Z-A</option>
               </select>
             </div>
-            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+            <div className="grid grid-cols-1 gap-x-2 md:grid-cols-2 lg:grid-cols-4">
               <PokemonCard
                 name="Bulbasaur"
                 imgSrc={bulbasaur}
@@ -203,6 +118,38 @@ export default function Home() {
                 name="Charmander"
                 imgSrc={charmander}
                 types={["Fire"]}
+              />
+              <PokemonCard
+                name="Charmeleon"
+                imgSrc={charmeleon}
+                types={["Fire"]}
+              />
+              <PokemonCard
+                name="Charizard"
+                imgSrc={charizard}
+                types={["Fire", "Flying"]}
+              />
+              <PokemonCard
+                name="Squirtle"
+                imgSrc={squirtle}
+                types={["Water"]}
+              />
+              <PokemonCard
+                name="Wartortle"
+                imgSrc={wartortle}
+                types={["Water"]}
+              />
+              <PokemonCard
+                name="Blastoise"
+                imgSrc={blastoise}
+                types={["Water"]}
+              />
+              <PokemonCard name="Caterpie" imgSrc={caterpie} types={["Bug"]} />
+              <PokemonCard name="Metapod" imgSrc={metapod} types={["Bug"]} />
+              <PokemonCard
+                name="Butterfree"
+                imgSrc={butterfree}
+                types={["Bug", "Flying"]}
               />
             </div>
             <div className="mt-2 mb-auto mx-auto">
