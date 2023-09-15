@@ -1,25 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import bulbasaur from "../../../public/bulbasaur.png";
+import PokemonType from "../pokemon/pokemonTypes/PokemonType";
 
 export default function Bulbasaur() {
   return (
     <body className="bg-white">
-      <Link href="/">this page!</Link>
-      <header>
-        <div>
-          <ul>
-            <a href="./index.html">
-              <li>Pokédex</li>
-            </a>
-            <li>Video Games & Apps</li>
-            <li>Trading Card Game</li>
-            <li>Pokémon TV</li>
-            <li>Play! Pokémon Events</li>
-            <li>News</li>
-          </ul>
-        </div>
-      </header>
       <main className="block ml-auto mr-auto max-w-[480px]">
         <h1 className="text-center  text-4xl text-black">
           Bulbasaur <span className="text-[#616161] block">#0001</span>
@@ -34,7 +20,7 @@ export default function Bulbasaur() {
           </div>
           <div className="flex-1 w-50% p-2">
             <div className="text-center pb-4">
-              <p className="text-center text-black text-2xl">
+              <p className="text-center text-black text-xl">
                 There is a plant seed right on its back from the day this
                 Pokémon is born. The seed slowly grows larger.
               </p>

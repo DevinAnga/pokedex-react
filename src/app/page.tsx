@@ -32,7 +32,6 @@ import PokemonCard from "./pokemon/pokemonCard/PokemonCard";
 export default function Home() {
   return (
     <>
-      <Link href="/bulbasaur">this page!</Link>
       <section className="pt-8 pb-2 px-4 bg-darkGrey max-w-screen-lg m-auto">
         <div className="py-0 px-6 w-full max-w-screen-lg m-auto">
           <div className="lg:grid lg:grid-cols-2 lg:gap-16">
@@ -69,7 +68,7 @@ export default function Home() {
                 </span>
               </div>
             </div>
-            <div className="bg-[#4dad5b] rounded-md p-4 mt-12">
+            <div className="bg-[#4dad5b] rounded-md p-4 self-start">
               <span className="text-xl text-white self-start font-semibold">
                 Search for a Pokémon by name or using its National Pokémon
                 number.
@@ -81,15 +80,15 @@ export default function Home() {
       <main className="bg-[#f3f3f3]">
         <div className="pt-10 bg-white max-w-screen-lg w-full m-auto">
           <div className="max-w-screen-lg w-full px-6 m-auto">
-            <div className="justify-center items-center max-w-[80%] mt-0 mx-auto mb-10 lg:inline-flex">
+            <div className="max-w-[80%] mt-0 mx-auto mb-10 lg:flex lg:max-w-full justify-end">
               <label
-                className="text-[#a4a4a4] text-2xl mb-1 whitespace-nowrap mr-4 lg:justify-items-end"
+                className="text-[#a4a4a4] text-2xl mb-1 whitespace-nowrap mr-4"
                 htmlFor="poke-search"
               >
                 Sort By
               </label>
               <select
-                className="bg-[#313131] px-4 text-white text-base h-12 w-full rounded-md"
+                className="bg-[#313131] px-4 text-white text-base h-12 w-full rounded-md max-w-xs"
                 name="poke-search"
               >
                 <option value="lowest-number">Lowest Number (First)</option>
@@ -98,12 +97,14 @@ export default function Home() {
                 <option value="Z-A">Z-A</option>
               </select>
             </div>
-            <div className="grid grid-cols-1 gap-x-2 md:grid-cols-2 lg:grid-cols-4">
-              <PokemonCard
-                name="Bulbasaur"
-                imgSrc={bulbasaur}
-                types={["Grass", "Poison"]}
-              />
+            <div className="grid grid-cols-1 gap-x-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+              <Link href="/bulbasaur">
+                <PokemonCard
+                  name="Bulbasaur"
+                  imgSrc={bulbasaur}
+                  types={["Grass", "Poison"]}
+                />
+              </Link>
               <PokemonCard
                 name="Ivysaur"
                 imgSrc={ivysaur}
@@ -163,7 +164,6 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <div className="navigation-overlay hidden"></div>
     </>
   );
 }

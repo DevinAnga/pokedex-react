@@ -23,9 +23,6 @@ export default function PokemonCard({ name, imgSrc, types }: PokemonCardProps) {
         alt="A happy Bulbasaur"
       />
       <span className="text-[#919191]">#0001</span>
-      {toggleMenu && (
-        <h1>THIS IS A SECRET H1 ONLY REVEALED BY TOGGLING THE MENU</h1>
-      )}
       <h2
         className="mt-2 mb-1 font-bold text-[#313136] text-base md:text-2xl"
         onClick={() => setToggleMenu(!toggleMenu)}
