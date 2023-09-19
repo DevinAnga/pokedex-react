@@ -5,21 +5,6 @@ import bulbasaur from "../../../../public/bulbasaur.png";
 export default function PokemonDetail() {
   return (
     <body className="bg-white">
-      <Link href="/blog2">this page!</Link>
-      <header>
-        <div>
-          <ul>
-            <a href="./index.html">
-              <li>Pokédex</li>
-            </a>
-            <li>Video Games & Apps</li>
-            <li>Trading Card Game</li>
-            <li>Pokémon TV</li>
-            <li>Play! Pokémon Events</li>
-            <li>News</li>
-          </ul>
-        </div>
-      </header>
       <main className="block ml-auto mr-auto max-w-[480px]">
         <h1 className="text-center  text-4xl text-black">
           Bulbasaur <span className="text-[#616161] block">#0001</span>

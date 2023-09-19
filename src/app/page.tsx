@@ -98,7 +98,7 @@ export default function Home() {
               </select>
             </div>
             <div className="grid grid-cols-1 gap-x-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-              <Link href="/bulbasaur">
+              <Link href="/pokemon/bulbasaur">
                 <PokemonCard
                   name="Bulbasaur"
                   imgSrc={bulbasaur}
